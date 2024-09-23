@@ -1,0 +1,294 @@
+---
+id: get-alert-details
+title: "Get alert details"
+description: "Overview"
+sidebar_label: "Get alert details"
+hide_title: true
+hide_table_of_contents: true
+api: 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
+sidebar_class_name: "post api-method"
+info_path: docs/seerportal-api
+custom_edit_url: null
+---
+
+import ApiTabs from "@theme/ApiTabs";
+import DiscriminatorTabs from "@theme/DiscriminatorTabs";
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import SecuritySchemes from "@theme/ApiExplorer/SecuritySchemes";
+import MimeTabs from "@theme/MimeTabs";
+import ParamsItem from "@theme/ParamsItem";
+import ResponseSamples from "@theme/ResponseSamples";
+import SchemaItem from "@theme/SchemaItem";
+import SchemaTabs from "@theme/SchemaTabs";
+import Heading from "@theme/Heading";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Get alert details"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"post"}
+  path={"/homepage/getAlertDetails"}
+>
+  
+</MethodEndpoint>
+
+
+
+Overview
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<details
+  style={{"marginBottom":"1rem"}}
+  className={"openapi-markdown__details"}
+  data-collapsed={false}
+  open={true}
+>
+  <summary
+    style={{}}
+  >
+    <h3
+      className={"openapi-markdown__details-summary-header-params"}
+    >
+      Header Parameters
+    </h3>
+  </summary><div>
+    <ul>
+      <ParamsItem
+        className={"paramsItem"}
+        param={{"name":"mode","in":"header","description":"mode in header","required":true,"schema":{"type":"string","default":"internal"}}}
+      >
+        
+      </ParamsItem>
+    </ul>
+  </div>
+</details><MimeTabs
+  className={"openapi-tabs__mime"}
+>
+  <TabItem
+    label={"application/json"}
+    value={"application/json-schema"}
+  >
+    <details
+      style={{}}
+      className={"openapi-markdown__details mime"}
+      data-collapsed={false}
+      open={true}
+    >
+      <summary
+        style={{}}
+        className={"openapi-markdown__details-summary-mime"}
+      >
+        <h3
+          className={"openapi-markdown__details-summary-header-body"}
+        >
+          Body
+        </h3><strong
+          className={"openapi-schema__required"}
+        >
+          required
+        </strong>
+      </summary><div
+        style={{"textAlign":"left","marginLeft":"1rem"}}
+      >
+        <div
+          style={{"marginTop":"1rem","marginBottom":"1rem"}}
+        >
+          
+          
+          Add the object such as: 
+          \{ 
+            
+            "from_date": "2022-05-10", 
+            "to_date": "2022-05-17", 
+            "type": "",
+            "report_config_code": "", 
+            "alert_status": [ "-0" ], 
+            "enabled": [ 1 ], 
+            "processor": [], 
+            "program": [] 
+          \}
+          **Add type as CS or FS or SS or RS as per requirement**
+          
+          
+        </div>
+      </div><ul
+        style={{"marginLeft":"1rem"}}
+      >
+        <SchemaItem
+          collapsible={false}
+          name={"from_date"}
+          required={false}
+          schemaName={"date"}
+          qualifierMessage={undefined}
+          schema={{"type":"string","format":"date"}}
+        >
+          
+        </SchemaItem><SchemaItem
+          collapsible={false}
+          name={"to_date"}
+          required={false}
+          schemaName={"date"}
+          qualifierMessage={undefined}
+          schema={{"type":"string","format":"date"}}
+        >
+          
+        </SchemaItem><SchemaItem
+          collapsible={false}
+          name={"type"}
+          required={false}
+          schemaName={"string"}
+          qualifierMessage={undefined}
+          schema={{"type":"string","default":"CS"}}
+        >
+          
+        </SchemaItem><SchemaItem
+          collapsible={false}
+          name={"report_config_code"}
+          required={false}
+          schemaName={"string"}
+          qualifierMessage={undefined}
+          schema={{"type":"string","default":""}}
+        >
+          
+        </SchemaItem><SchemaItem
+          collapsible={false}
+          name={"alert_status"}
+          required={false}
+          schemaName={"string[]"}
+          qualifierMessage={undefined}
+          schema={{"type":"array","items":{"type":"string"}}}
+        >
+          
+        </SchemaItem><SchemaItem
+          collapsible={false}
+          name={"enabled"}
+          required={false}
+          schemaName={"integer[]"}
+          qualifierMessage={undefined}
+          schema={{"type":"array","items":{"type":"integer"}}}
+        >
+          
+        </SchemaItem><SchemaItem
+          collapsible={false}
+          name={"processor"}
+          required={false}
+          schemaName={"integer[]"}
+          qualifierMessage={undefined}
+          schema={{"type":"array","items":{"type":"integer"}}}
+        >
+          
+        </SchemaItem><SchemaItem
+          collapsible={false}
+          name={"program"}
+          required={false}
+          schemaName={"string[]"}
+          qualifierMessage={undefined}
+          schema={{"type":"array","items":{"type":"string"}}}
+        >
+          
+        </SchemaItem>
+      </ul>
+    </details>
+  </TabItem>
+</MimeTabs><div>
+  <div>
+    <ApiTabs
+      label={undefined}
+      id={undefined}
+    >
+      <TabItem
+        label={"200"}
+        value={"200"}
+      >
+        <div>
+          
+          
+          Success
+          
+          
+        </div><div>
+          
+        </div>
+      </TabItem><TabItem
+        label={"201"}
+        value={"201"}
+      >
+        <div>
+          
+          
+          Invalid Access Token
+          
+          
+        </div><div>
+          
+        </div>
+      </TabItem><TabItem
+        label={"401"}
+        value={"401"}
+      >
+        <div>
+          
+          
+          You are not authorized to access this page!
+          
+          
+        </div><div>
+          
+        </div>
+      </TabItem><TabItem
+        label={"405"}
+        value={"405"}
+      >
+        <div>
+          
+          
+          report_config_code must be a string, alert_status is invalid, enabled is invalid,
+          
+          
+        </div><div>
+          
+        </div>
+      </TabItem><TabItem
+        label={"412"}
+        value={"412"}
+      >
+        <div>
+          
+          
+          No record found
+          
+          
+        </div><div>
+          
+        </div>
+      </TabItem><TabItem
+        label={"500"}
+        value={"500"}
+      >
+        <div>
+          
+          
+          Something went wrong please contact the system administrator
+          
+          
+        </div><div>
+          
+        </div>
+      </TabItem>
+    </ApiTabs>
+  </div>
+</div>
+      

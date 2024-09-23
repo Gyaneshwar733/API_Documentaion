@@ -1,0 +1,404 @@
+---
+id: update-user
+title: "Update user"
+description: "User Management"
+sidebar_label: "Update user"
+hide_title: true
+hide_table_of_contents: true
+api: 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
+sidebar_class_name: "post api-method"
+info_path: docs/seerportal-api
+custom_edit_url: null
+---
+
+import ApiTabs from "@theme/ApiTabs";
+import DiscriminatorTabs from "@theme/DiscriminatorTabs";
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import SecuritySchemes from "@theme/ApiExplorer/SecuritySchemes";
+import MimeTabs from "@theme/MimeTabs";
+import ParamsItem from "@theme/ParamsItem";
+import ResponseSamples from "@theme/ResponseSamples";
+import SchemaItem from "@theme/SchemaItem";
+import SchemaTabs from "@theme/SchemaTabs";
+import Heading from "@theme/Heading";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Update user"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"post"}
+  path={"/userDetails/updateUser"}
+>
+  
+</MethodEndpoint>
+
+
+
+User Management
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<details
+  style={{"marginBottom":"1rem"}}
+  className={"openapi-markdown__details"}
+  data-collapsed={false}
+  open={true}
+>
+  <summary
+    style={{}}
+  >
+    <h3
+      className={"openapi-markdown__details-summary-header-params"}
+    >
+      Header Parameters
+    </h3>
+  </summary><div>
+    <ul>
+      <ParamsItem
+        className={"paramsItem"}
+        param={{"name":"mode","in":"header","description":"mode in header","required":true,"schema":{"type":"string","default":"internal"}}}
+      >
+        
+      </ParamsItem>
+    </ul>
+  </div>
+</details><MimeTabs
+  className={"openapi-tabs__mime"}
+>
+  <TabItem
+    label={"application/json"}
+    value={"application/json-schema"}
+  >
+    <details
+      style={{}}
+      className={"openapi-markdown__details mime"}
+      data-collapsed={false}
+      open={true}
+    >
+      <summary
+        style={{}}
+        className={"openapi-markdown__details-summary-mime"}
+      >
+        <h3
+          className={"openapi-markdown__details-summary-header-body"}
+        >
+          Body
+        </h3><strong
+          className={"openapi-schema__required"}
+        >
+          required
+        </strong>
+      </summary><div
+        style={{"textAlign":"left","marginLeft":"1rem"}}
+      >
+        <div
+          style={{"marginTop":"1rem","marginBottom":"1rem"}}
+        >
+          
+          
+           **1.To get [ first_name ] i.e. user details        and     [   createdby    ] :**
+          --&gt;Execute the API endpoint ( Admin & Billing ): 
+          /userDetails/users
+          (**e.g.** "id": 2047,  "first_name": "Read Write Admin")
+          **2.To get [  Phone Code ]  for respective country :**
+          --&gt;Execute the API endpoint ( Rules and MDM ):  
+          /country/phone-code
+          (**e.g.** "country_name": "United Kingdom","phone_code": "44") 
+          **3.To get [  role_id ] :** 
+          --&gt;Execute the API endpoint ( Admin & Billing ): 
+          /roleDetails/roleList
+          (**e.g.** "id": 1,                "name": "Global Admin")
+          **4.To get [   program_group    ] :**
+          --&gt; Execute the API endpoint ( Admin & Billing ) :                            
+          /programGroups/get-list
+          (**e.g.** "id": 18, "name": "All programs")
+          
+          **5.To get [   report_group    ] :**
+          --&gt;Execute the API endpoint ( Admin & Billing ) :                                                               
+          /reportGroups/get-list
+          (**e.g.** "id": 4,  "name": "FraudSeer Reports")
+          **6.For   email_notification,  is_active,  is_deleted, two_factor_auth_status, is_admin** 
+          Description:  
+          If Yes then "1" , 
+          If No then "0"
+          (**e.g.** "email_notification": "0")
+          
+          **7.To get [   cluster_id    ] :**
+          --&gt;Execute the API endpoint ( Admin & Billing ):                                                                
+          /clusterDetails/list
+          (**e.g.** "id": 2,  "name": "Dev225")
+          
+          
+        </div>
+      </div><ul
+        style={{"marginLeft":"1rem"}}
+      >
+        <SchemaItem
+          collapsible={false}
+          name={"phone_code"}
+          required={false}
+          schemaName={"int64"}
+          qualifierMessage={undefined}
+          schema={{"type":"integer","format":"int64","default":40}}
+        >
+          
+        </SchemaItem><SchemaItem
+          collapsible={false}
+          name={"first_name"}
+          required={false}
+          schemaName={"string"}
+          qualifierMessage={undefined}
+          schema={{"type":"string","default":"Andreas"}}
+        >
+          
+        </SchemaItem><SchemaItem
+          collapsible={false}
+          name={"last_name"}
+          required={false}
+          schemaName={"string"}
+          qualifierMessage={undefined}
+          schema={{"type":"string","default":"Bobe"}}
+        >
+          
+        </SchemaItem><SchemaItem
+          collapsible={false}
+          name={"contact_number"}
+          required={false}
+          schemaName={"string"}
+          qualifierMessage={undefined}
+          schema={{"type":"string","default":"6754434342"}}
+        >
+          
+        </SchemaItem><SchemaItem
+          collapsible={false}
+          name={"role_id"}
+          required={false}
+          schemaName={"int64"}
+          qualifierMessage={undefined}
+          schema={{"type":"integer","format":"int64","default":1}}
+        >
+          
+        </SchemaItem><SchemaItem
+          collapsible={false}
+          name={"program_group"}
+          required={false}
+          schemaName={"int64"}
+          qualifierMessage={undefined}
+          schema={{"type":"integer","format":"int64","default":1}}
+        >
+          
+        </SchemaItem><SchemaItem
+          collapsible={false}
+          name={"report_group"}
+          required={false}
+          schemaName={"int64"}
+          qualifierMessage={undefined}
+          schema={{"type":"integer","format":"int64","default":1}}
+        >
+          
+        </SchemaItem><SchemaItem
+          collapsible={false}
+          name={"email_notification"}
+          required={false}
+          schemaName={"string"}
+          qualifierMessage={"**Possible values:** [`0`, `1`]"}
+          schema={{"type":"string","default":"0","enum":["0","1"]}}
+        >
+          
+        </SchemaItem><SchemaItem
+          collapsible={false}
+          name={"is_active"}
+          required={false}
+          schemaName={"string"}
+          qualifierMessage={"**Possible values:** [`0`, `1`]"}
+          schema={{"type":"string","default":"0","enum":["0","1"]}}
+        >
+          
+        </SchemaItem><SchemaItem
+          collapsible={false}
+          name={"is_deleted"}
+          required={false}
+          schemaName={"string"}
+          qualifierMessage={"**Possible values:** [`0`, `1`]"}
+          schema={{"type":"string","default":"0","enum":["0","1"]}}
+        >
+          
+        </SchemaItem><SchemaItem
+          collapsible={false}
+          name={"two_factor_auth_status"}
+          required={false}
+          schemaName={"string"}
+          qualifierMessage={"**Possible values:** [`0`, `1`]"}
+          schema={{"type":"string","default":"0","enum":["0","1"]}}
+        >
+          
+        </SchemaItem><SchemaItem
+          collapsible={true}
+          className={"schemaItem"}
+        >
+          <details
+            style={{}}
+            className={"openapi-markdown__details"}
+          >
+            <summary
+              style={{}}
+            >
+              <span
+                className={"openapi-schema__container"}
+              >
+                <strong
+                  className={"openapi-schema__property"}
+                >
+                  cluster
+                </strong><span
+                  className={"openapi-schema__name"}
+                >
+                   object[]
+                </span>
+              </span>
+            </summary><div
+              style={{"marginLeft":"1rem"}}
+            >
+              <li>
+                <div
+                  style={{"fontSize":"var(--ifm-code-font-size)","opacity":"0.6","marginLeft":"-.5rem","paddingBottom":".5rem"}}
+                >
+                  Array [
+                </div>
+              </li><SchemaItem
+                collapsible={false}
+                name={"cluster_id"}
+                required={false}
+                schemaName={"int64"}
+                qualifierMessage={undefined}
+                schema={{"type":"integer","format":"int64","default":2}}
+              >
+                
+              </SchemaItem><SchemaItem
+                collapsible={false}
+                name={"is_admin"}
+                required={false}
+                schemaName={"string"}
+                qualifierMessage={"**Possible values:** [`0`, `1`]"}
+                schema={{"type":"string","default":"0","enum":["0","1"]}}
+              >
+                
+              </SchemaItem><li>
+                <div
+                  style={{"fontSize":"var(--ifm-code-font-size)","opacity":"0.6","marginLeft":"-.5rem"}}
+                >
+                  ]
+                </div>
+              </li>
+            </div>
+          </details>
+        </SchemaItem><SchemaItem
+          collapsible={false}
+          name={"is_status_modified"}
+          required={false}
+          schemaName={"boolean"}
+          qualifierMessage={undefined}
+          schema={{"type":"boolean","default":false}}
+        >
+          
+        </SchemaItem><SchemaItem
+          collapsible={false}
+          name={"id"}
+          required={false}
+          schemaName={"string"}
+          qualifierMessage={undefined}
+          schema={{"type":"string","default":"2629"}}
+        >
+          
+        </SchemaItem>
+      </ul>
+    </details>
+  </TabItem>
+</MimeTabs><div>
+  <div>
+    <ApiTabs
+      label={undefined}
+      id={undefined}
+    >
+      <TabItem
+        label={"200"}
+        value={"200"}
+      >
+        <div>
+          
+          
+          Success
+          
+          
+        </div><div>
+          
+        </div>
+      </TabItem><TabItem
+        label={"201"}
+        value={"201"}
+      >
+        <div>
+          
+          
+          Invalid Access Token
+          
+          
+        </div><div>
+          
+        </div>
+      </TabItem><TabItem
+        label={"400"}
+        value={"400"}
+      >
+        <div>
+          
+          
+          No route found
+          
+          
+        </div><div>
+          
+        </div>
+      </TabItem><TabItem
+        label={"404"}
+        value={"404"}
+      >
+        <div>
+          
+          
+          User[s] not found
+          
+          
+        </div><div>
+          
+        </div>
+      </TabItem><TabItem
+        label={"405"}
+        value={"405"}
+      >
+        <div>
+          
+          
+          last_name is required field, Please enter a valid contact_number, Only Numeric values allowed, Min- 10, Max- 10,
+          
+          
+        </div><div>
+          
+        </div>
+      </TabItem>
+    </ApiTabs>
+  </div>
+</div>
+      

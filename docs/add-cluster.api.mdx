@@ -1,0 +1,404 @@
+---
+id: add-cluster
+title: "Add cluster"
+description: "Cluster Config/ Node Management"
+sidebar_label: "Add cluster"
+hide_title: true
+hide_table_of_contents: true
+api: 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
+sidebar_class_name: "post api-method"
+info_path: docs/seerportal-api
+custom_edit_url: null
+---
+
+import ApiTabs from "@theme/ApiTabs";
+import DiscriminatorTabs from "@theme/DiscriminatorTabs";
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import SecuritySchemes from "@theme/ApiExplorer/SecuritySchemes";
+import MimeTabs from "@theme/MimeTabs";
+import ParamsItem from "@theme/ParamsItem";
+import ResponseSamples from "@theme/ResponseSamples";
+import SchemaItem from "@theme/SchemaItem";
+import SchemaTabs from "@theme/SchemaTabs";
+import Heading from "@theme/Heading";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Add cluster"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"post"}
+  path={"/clusterDetails/add"}
+>
+  
+</MethodEndpoint>
+
+
+
+Cluster Config/ Node Management
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<details
+  style={{"marginBottom":"1rem"}}
+  className={"openapi-markdown__details"}
+  data-collapsed={false}
+  open={true}
+>
+  <summary
+    style={{}}
+  >
+    <h3
+      className={"openapi-markdown__details-summary-header-params"}
+    >
+      Header Parameters
+    </h3>
+  </summary><div>
+    <ul>
+      <ParamsItem
+        className={"paramsItem"}
+        param={{"name":"mode","in":"header","description":"mode in header","required":true,"schema":{"type":"string","default":"internal"}}}
+      >
+        
+      </ParamsItem>
+    </ul>
+  </div>
+</details><MimeTabs
+  className={"openapi-tabs__mime"}
+>
+  <TabItem
+    label={"application/json"}
+    value={"application/json-schema"}
+  >
+    <details
+      style={{}}
+      className={"openapi-markdown__details mime"}
+      data-collapsed={false}
+      open={true}
+    >
+      <summary
+        style={{}}
+        className={"openapi-markdown__details-summary-mime"}
+      >
+        <h3
+          className={"openapi-markdown__details-summary-header-body"}
+        >
+          Body
+        </h3><strong
+          className={"openapi-schema__required"}
+        >
+          required
+        </strong>
+      </summary><div
+        style={{"textAlign":"left","marginLeft":"1rem"}}
+      >
+        <div
+          style={{"marginTop":"1rem","marginBottom":"1rem"}}
+        >
+          
+          
+          **1.For " is_primary "  and " archive_wu ":**
+          Description:
+          If Yes then      " 1 " ,
+          If No then " 0 "
+          (**e.g.**  "is_primary" : "0"),
+          
+          **2.To get [ user ] and [ password ]:** Contact to system administrator.
+          
+          **3.Select protocol as http / https.**
+          
+          **4.To get [ api_key  ]:**
+          --&gt;Execute the API endpoint ( Admin & Billing ): 
+          /tokens/token-list/\{id\}
+          ( **e.g.** "id": 14,             "name": "BAI2_Interface") 
+          
+          **5.To get [ DSClusters  ]:**
+          --&gt;Execute the API endpoint ( Admin & Billing ): 
+          /clusterDetails/DSlist
+          ( **e.g.** "id": 194,                         "name": "dev2608" )
+          
+          **6.To get [ createdby ]:**       
+          --&gt;Execute the API endpoint ( Admin & Billing ): 
+          /userDetails/users
+          (**e.g.** "id": 2047,  "first_name": "Read Write Admin")  
+          
+          
+        </div>
+      </div><ul
+        style={{"marginLeft":"1rem"}}
+      >
+        <SchemaItem
+          collapsible={false}
+          name={"is_primary"}
+          required={false}
+          schemaName={"string"}
+          qualifierMessage={undefined}
+          schema={{"type":"string","default":"0"}}
+        >
+          
+        </SchemaItem><SchemaItem
+          collapsible={false}
+          name={"name"}
+          required={false}
+          schemaName={"string"}
+          qualifierMessage={undefined}
+          schema={{"type":"string","default":"dev2608"}}
+        >
+          
+        </SchemaItem><SchemaItem
+          collapsible={false}
+          name={"user"}
+          required={false}
+          schemaName={"string"}
+          qualifierMessage={undefined}
+          schema={{"type":"string","default":"ssohoni"}}
+        >
+          
+        </SchemaItem><SchemaItem
+          collapsible={false}
+          name={"password"}
+          required={false}
+          schemaName={"string"}
+          qualifierMessage={undefined}
+          schema={{"type":"string","default":"Z0ltr!xe"}}
+        >
+          
+        </SchemaItem><SchemaItem
+          collapsible={false}
+          name={"protocol"}
+          required={false}
+          schemaName={"string"}
+          qualifierMessage={undefined}
+          schema={{"type":"string","default":"https"}}
+        >
+          
+        </SchemaItem><SchemaItem
+          collapsible={false}
+          name={"connect_using"}
+          required={false}
+          schemaName={"string"}
+          qualifierMessage={undefined}
+          schema={{"type":"string","default":"internal_ip"}}
+        >
+          
+        </SchemaItem><SchemaItem
+          collapsible={false}
+          name={"dns"}
+          required={false}
+          schemaName={"string"}
+          qualifierMessage={undefined}
+          schema={{"type":"string","default":"corp.dataseers.ai"}}
+        >
+          
+        </SchemaItem><SchemaItem
+          collapsible={false}
+          name={"external_ip"}
+          required={false}
+          schemaName={"string"}
+          qualifierMessage={undefined}
+          schema={{"type":"string","default":"192.168.0.225"}}
+        >
+          
+        </SchemaItem><SchemaItem
+          collapsible={false}
+          name={"internal_ip"}
+          required={false}
+          schemaName={"string"}
+          qualifierMessage={undefined}
+          schema={{"type":"string","default":"192.168.0.225"}}
+        >
+          
+        </SchemaItem><SchemaItem
+          collapsible={false}
+          name={"port"}
+          required={false}
+          schemaName={"int64"}
+          qualifierMessage={undefined}
+          schema={{"type":"integer","format":"int64","default":18010}}
+        >
+          
+        </SchemaItem><SchemaItem
+          collapsible={false}
+          name={"esp_port"}
+          required={false}
+          schemaName={"int64"}
+          qualifierMessage={undefined}
+          schema={{"type":"integer","format":"int64","default":18002}}
+        >
+          
+        </SchemaItem><SchemaItem
+          collapsible={false}
+          name={"dropzone"}
+          required={false}
+          schemaName={"string"}
+          qualifierMessage={undefined}
+          schema={{"type":"string","default":"/home/dropzone/dataseers"}}
+        >
+          
+        </SchemaItem><SchemaItem
+          collapsible={false}
+          name={"working_directory"}
+          required={false}
+          schemaName={"string"}
+          qualifierMessage={undefined}
+          schema={{"type":"string","default":"adhoc"}}
+        >
+          
+        </SchemaItem><SchemaItem
+          collapsible={false}
+          name={"watchlist_directory"}
+          required={false}
+          schemaName={"string"}
+          qualifierMessage={undefined}
+          schema={{"type":"string","default":"watchlist"}}
+        >
+          
+        </SchemaItem><SchemaItem
+          collapsible={false}
+          name={"lawenforcement_directory"}
+          required={false}
+          schemaName={"string"}
+          qualifierMessage={undefined}
+          schema={{"type":"string","default":"enforcementrequests"}}
+        >
+          
+        </SchemaItem><SchemaItem
+          collapsible={false}
+          name={"archive_wu"}
+          required={false}
+          schemaName={"int64"}
+          qualifierMessage={undefined}
+          schema={{"type":"integer","format":"int64","default":0}}
+        >
+          
+        </SchemaItem><SchemaItem
+          collapsible={false}
+          name={"api_key"}
+          required={false}
+          schemaName={"string"}
+          qualifierMessage={undefined}
+          schema={{"type":"string","default":"677b0e4d2a8249aa80f9da18bc8ad6f5"}}
+        >
+          
+        </SchemaItem><SchemaItem
+          collapsible={false}
+          name={"DSClusters"}
+          required={false}
+          schemaName={"int64"}
+          qualifierMessage={undefined}
+          schema={{"type":"integer","format":"int64","default":2}}
+        >
+          
+        </SchemaItem><SchemaItem
+          collapsible={false}
+          name={"createdby"}
+          required={false}
+          schemaName={"int64"}
+          qualifierMessage={undefined}
+          schema={{"type":"integer","format":"int64","default":2047}}
+        >
+          
+        </SchemaItem>
+      </ul>
+    </details>
+  </TabItem>
+</MimeTabs><div>
+  <div>
+    <ApiTabs
+      label={undefined}
+      id={undefined}
+    >
+      <TabItem
+        label={"200"}
+        value={"200"}
+      >
+        <div>
+          
+          
+          Success
+          
+          
+        </div><div>
+          
+        </div>
+      </TabItem><TabItem
+        label={"201"}
+        value={"201"}
+      >
+        <div>
+          
+          
+          Invalid Access Token
+          
+          
+        </div><div>
+          
+        </div>
+      </TabItem><TabItem
+        label={"405"}
+        value={"405"}
+      >
+        <div>
+          
+          
+          api_key is required, api_key must be a number
+          
+          
+        </div><div>
+          
+        </div>
+      </TabItem><TabItem
+        label={"412"}
+        value={"412"}
+      >
+        <div>
+          
+          
+          No record found
+          
+          
+        </div><div>
+          
+        </div>
+      </TabItem><TabItem
+        label={"500"}
+        value={"500"}
+      >
+        <div>
+          
+          
+          unable to connect ECL server due to invalid username/password
+          
+          
+        </div><div>
+          
+        </div>
+      </TabItem><TabItem
+        label={"577"}
+        value={"577"}
+      >
+        <div>
+          
+          
+          Internal and external ip already exist
+          
+          
+        </div><div>
+          
+        </div>
+      </TabItem>
+    </ApiTabs>
+  </div>
+</div>
+      

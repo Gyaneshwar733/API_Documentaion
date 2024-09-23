@@ -1,0 +1,240 @@
+---
+id: register
+title: "New user registration"
+description: "The API allows users to create a new account by providing their details. It accepts user information such as name, email, and password, and registers the user in the system."
+sidebar_label: "New user registration"
+hide_title: true
+hide_table_of_contents: true
+api: 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
+sidebar_class_name: "post api-method"
+info_path: docs/seerportal-api
+custom_edit_url: null
+---
+
+import ApiTabs from "@theme/ApiTabs";
+import DiscriminatorTabs from "@theme/DiscriminatorTabs";
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import SecuritySchemes from "@theme/ApiExplorer/SecuritySchemes";
+import MimeTabs from "@theme/MimeTabs";
+import ParamsItem from "@theme/ParamsItem";
+import ResponseSamples from "@theme/ResponseSamples";
+import SchemaItem from "@theme/SchemaItem";
+import SchemaTabs from "@theme/SchemaTabs";
+import Heading from "@theme/Heading";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"New user registration"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"post"}
+  path={"/userDetails/register"}
+>
+  
+</MethodEndpoint>
+
+
+
+The API allows users to create a new account by providing their details. It accepts user information such as name, email, and password, and registers the user in the system.
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<MimeTabs
+  className={"openapi-tabs__mime"}
+>
+  <TabItem
+    label={"application/json"}
+    value={"application/json-schema"}
+  >
+    <details
+      style={{}}
+      className={"openapi-markdown__details mime"}
+      data-collapsed={false}
+      open={true}
+    >
+      <summary
+        style={{}}
+        className={"openapi-markdown__details-summary-mime"}
+      >
+        <h3
+          className={"openapi-markdown__details-summary-header-body"}
+        >
+          Body
+        </h3><strong
+          className={"openapi-schema__required"}
+        >
+          required
+        </strong>
+      </summary><div
+        style={{"textAlign":"left","marginLeft":"1rem"}}
+      >
+        <div
+          style={{"marginTop":"1rem","marginBottom":"1rem"}}
+        >
+          
+          
+          **To get phone code for respective country:**
+          Execute the API endpoint (Rules and MDM):  
+          /country/phone-code. 
+          
+          **e.g.** ("country_name": "Angola",                 "phone_code": "244" )
+          
+          
+        </div>
+      </div><ul
+        style={{"marginLeft":"1rem"}}
+      >
+        <SchemaItem
+          collapsible={false}
+          name={"phone_code"}
+          required={false}
+          schemaName={"int64"}
+          qualifierMessage={undefined}
+          schema={{"type":"integer","format":"int64","default":244,"description":"The country dialing code for the user's phone number.\n\n e.g: **244** is the dialing code for Angola."}}
+        >
+          
+        </SchemaItem><SchemaItem
+          collapsible={false}
+          name={"first_name"}
+          required={false}
+          schemaName={"string"}
+          qualifierMessage={undefined}
+          schema={{"type":"string","default":"Nelson","description":"The user’s first name."}}
+        >
+          
+        </SchemaItem><SchemaItem
+          collapsible={false}
+          name={"last_name"}
+          required={false}
+          schemaName={"string"}
+          qualifierMessage={undefined}
+          schema={{"type":"string","default":"Milton","description":"The user’s last name."}}
+        >
+          
+        </SchemaItem><SchemaItem
+          collapsible={false}
+          name={"contact_number"}
+          required={false}
+          schemaName={"string"}
+          qualifierMessage={undefined}
+          schema={{"type":"string","default":"1771953049","description":"The user's phone number, formatted without any country code or special characters."}}
+        >
+          
+        </SchemaItem><SchemaItem
+          collapsible={false}
+          name={"email"}
+          required={false}
+          schemaName={"string"}
+          qualifierMessage={undefined}
+          schema={{"type":"string","default":"rwauser@dataseers.ai","description":"The user's email address used for account registration."}}
+        >
+          
+        </SchemaItem><SchemaItem
+          collapsible={false}
+          name={"password"}
+          required={false}
+          schemaName={"string"}
+          qualifierMessage={undefined}
+          schema={{"type":"string","description":"The user's chosen password for account access. This should be a secure, encrypted string."}}
+        >
+          
+        </SchemaItem><SchemaItem
+          collapsible={false}
+          name={"confirm_password"}
+          required={false}
+          schemaName={"string"}
+          qualifierMessage={undefined}
+          schema={{"type":"string","description":"A confirmation of the user's password to ensure both entries match."}}
+        >
+          
+        </SchemaItem>
+      </ul>
+    </details>
+  </TabItem>
+</MimeTabs><div>
+  <div>
+    <ApiTabs
+      label={undefined}
+      id={undefined}
+    >
+      <TabItem
+        label={"200"}
+        value={"200"}
+      >
+        <div>
+          
+          
+          Success.
+          
+          
+        </div><div>
+          
+        </div>
+      </TabItem><TabItem
+        label={"400"}
+        value={"400"}
+      >
+        <div>
+          
+          
+          No root found.
+          
+          
+        </div><div>
+          
+        </div>
+      </TabItem><TabItem
+        label={"405"}
+        value={"405"}
+      >
+        <div>
+          
+          
+          Please enter a valid password.
+          
+          
+        </div><div>
+          
+        </div>
+      </TabItem><TabItem
+        label={"407"}
+        value={"407"}
+      >
+        <div>
+          
+          
+          Required parameters are missing.
+          
+          
+        </div><div>
+          
+        </div>
+      </TabItem><TabItem
+        label={"410"}
+        value={"410"}
+      >
+        <div>
+          
+          
+          Email address already exists.
+          
+          
+        </div><div>
+          
+        </div>
+      </TabItem>
+    </ApiTabs>
+  </div>
+</div>
+      

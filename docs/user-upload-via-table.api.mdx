@@ -1,0 +1,340 @@
+---
+id: user-upload-via-table
+title: "User upload via table"
+description: "The API is used to correct and re-upload user data after errors are detected during a previous user upload via an Excel file. The errors are provided in table format, and users with corrected data can be re-uploaded."
+sidebar_label: "User upload via table"
+hide_title: true
+hide_table_of_contents: true
+api: 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
+sidebar_class_name: "post api-method"
+info_path: docs/seerportal-api
+custom_edit_url: null
+---
+
+import ApiTabs from "@theme/ApiTabs";
+import DiscriminatorTabs from "@theme/DiscriminatorTabs";
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import SecuritySchemes from "@theme/ApiExplorer/SecuritySchemes";
+import MimeTabs from "@theme/MimeTabs";
+import ParamsItem from "@theme/ParamsItem";
+import ResponseSamples from "@theme/ResponseSamples";
+import SchemaItem from "@theme/SchemaItem";
+import SchemaTabs from "@theme/SchemaTabs";
+import Heading from "@theme/Heading";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"User upload via table"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"post"}
+  path={"/userDetails/bulk-upload-table"}
+>
+  
+</MethodEndpoint>
+
+
+
+The API is used to correct and re-upload user data after errors are detected during a previous user upload via an Excel file. The errors are provided in table format, and users with corrected data can be re-uploaded.
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<MimeTabs
+  className={"openapi-tabs__mime"}
+>
+  <TabItem
+    label={"application/json"}
+    value={"application/json-schema"}
+  >
+    <details
+      style={{}}
+      className={"openapi-markdown__details mime"}
+      data-collapsed={false}
+      open={true}
+    >
+      <summary
+        style={{}}
+        className={"openapi-markdown__details-summary-mime"}
+      >
+        <h3
+          className={"openapi-markdown__details-summary-header-body"}
+        >
+          Body
+        </h3><strong
+          className={"openapi-schema__required"}
+        >
+          required
+        </strong>
+      </summary><div
+        style={{"textAlign":"left","marginLeft":"1rem"}}
+      >
+        
+      </div><ul
+        style={{"marginLeft":"1rem"}}
+      >
+        <SchemaItem
+          collapsible={true}
+          className={"schemaItem"}
+        >
+          <details
+            style={{}}
+            className={"openapi-markdown__details"}
+          >
+            <summary
+              style={{}}
+            >
+              <span
+                className={"openapi-schema__container"}
+              >
+                <strong
+                  className={"openapi-schema__property"}
+                >
+                  tableContent
+                </strong><span
+                  className={"openapi-schema__name"}
+                >
+                   object[]
+                </span>
+              </span>
+            </summary><div
+              style={{"marginLeft":"1rem"}}
+            >
+              <li>
+                <div
+                  style={{"fontSize":"var(--ifm-code-font-size)","opacity":"0.6","marginLeft":"-.5rem","paddingBottom":".5rem"}}
+                >
+                  Array [
+                </div>
+              </li><SchemaItem
+                collapsible={false}
+                name={"first_name"}
+                required={false}
+                schemaName={"string"}
+                qualifierMessage={undefined}
+                schema={{"type":"string","default":"dataseers","description":"The first name of the user. eg: **dataseers**"}}
+              >
+                
+              </SchemaItem><SchemaItem
+                collapsible={false}
+                name={"last_name"}
+                required={false}
+                schemaName={"string"}
+                qualifierMessage={undefined}
+                schema={{"type":"string","default":"ai","description":"The last name of the user. eg: **ai**"}}
+              >
+                
+              </SchemaItem><SchemaItem
+                collapsible={false}
+                name={"email"}
+                required={false}
+                schemaName={"string"}
+                qualifierMessage={undefined}
+                schema={{"type":"string","default":"angel@dataseers.in","description":"The email address of the user. This should be unique in the system. eg: **angel@dataseers.in\"**"}}
+              >
+                
+              </SchemaItem><SchemaItem
+                collapsible={false}
+                name={"phone_code"}
+                required={false}
+                schemaName={"string"}
+                qualifierMessage={undefined}
+                schema={{"type":"string","default":"1-Canada","description":"The phone code for the user's contact number, typically includes the country code. eg: **1-Canada**"}}
+              >
+                
+              </SchemaItem><SchemaItem
+                collapsible={false}
+                name={"contact_number"}
+                required={false}
+                schemaName={"string"}
+                qualifierMessage={undefined}
+                schema={{"type":"string","default":"7898786755","description":"The actual phone number of the user. eg: **7898786755**"}}
+              >
+                
+              </SchemaItem><SchemaItem
+                collapsible={false}
+                name={"role_name"}
+                required={false}
+                schemaName={"string"}
+                qualifierMessage={undefined}
+                schema={{"type":"string","default":"1-Global Admin","description":"The role assigned to the user within the system. eg: **1-Global Admin**"}}
+              >
+                
+              </SchemaItem><SchemaItem
+                collapsible={false}
+                name={"program_group"}
+                required={false}
+                schemaName={"string"}
+                qualifierMessage={undefined}
+                schema={{"type":"string","default":"5-All Programs","description":"Represents the group or program the user is associated with.  eg: **5-All Programs**"}}
+              >
+                
+              </SchemaItem><SchemaItem
+                collapsible={false}
+                name={"report_group"}
+                required={false}
+                schemaName={"string"}
+                qualifierMessage={undefined}
+                schema={{"type":"string","default":"9-All Reports","description":"Indicates the group and category of reports the user has access to. eg: **9-All Reports**"}}
+              >
+                
+              </SchemaItem><SchemaItem
+                collapsible={false}
+                name={"password"}
+                required={false}
+                schemaName={"string"}
+                qualifierMessage={undefined}
+                schema={{"type":"string","default":"Abc@12345678","description":"The password for the user. This should be securely handled and meet security requirements. eg: **Abc@12345678**"}}
+              >
+                
+              </SchemaItem><SchemaItem
+                collapsible={true}
+                className={"schemaItem"}
+              >
+                <details
+                  style={{}}
+                  className={"openapi-markdown__details"}
+                >
+                  <summary
+                    style={{}}
+                  >
+                    <span
+                      className={"openapi-schema__container"}
+                    >
+                      <strong
+                        className={"openapi-schema__property"}
+                      >
+                        error
+                      </strong><span
+                        className={"openapi-schema__name"}
+                      >
+                         object[]
+                      </span>
+                    </span>
+                  </summary><div
+                    style={{"marginLeft":"1rem"}}
+                  >
+                    <li>
+                      <div
+                        style={{"fontSize":"var(--ifm-code-font-size)","opacity":"0.6","marginLeft":"-.5rem","paddingBottom":".5rem"}}
+                      >
+                        Array [
+                      </div>
+                    </li><SchemaItem
+                      collapsible={false}
+                      name={"label"}
+                      required={false}
+                      schemaName={"string"}
+                      qualifierMessage={undefined}
+                      schema={{"type":"string","default":"email","description":"The field that caused the error. e.g: **email**"}}
+                    >
+                      
+                    </SchemaItem><SchemaItem
+                      collapsible={false}
+                      name={"msg"}
+                      required={false}
+                      schemaName={"string"}
+                      qualifierMessage={undefined}
+                      schema={{"type":"string","default":"Email Address dataseersr@dataseers.in is already exist.","description":"The error message. e.d: **Email already exist**"}}
+                    >
+                      
+                    </SchemaItem><SchemaItem
+                      collapsible={false}
+                      name={"Edited"}
+                      required={false}
+                      schemaName={"boolean"}
+                      qualifierMessage={undefined}
+                      schema={{"type":"boolean","default":true,"description":"A flag indicating if the error has been edited for retrying."}}
+                    >
+                      
+                    </SchemaItem><li>
+                      <div
+                        style={{"fontSize":"var(--ifm-code-font-size)","opacity":"0.6","marginLeft":"-.5rem"}}
+                      >
+                        ]
+                      </div>
+                    </li>
+                  </div>
+                </details>
+              </SchemaItem><SchemaItem
+                collapsible={false}
+                name={"id"}
+                required={false}
+                schemaName={"int32"}
+                qualifierMessage={undefined}
+                schema={{"type":"integer","format":"int32","default":1,"description":"The unique identifier for each user. e.g: **1**"}}
+              >
+                
+              </SchemaItem><li>
+                <div
+                  style={{"fontSize":"var(--ifm-code-font-size)","opacity":"0.6","marginLeft":"-.5rem"}}
+                >
+                  ]
+                </div>
+              </li>
+            </div>
+          </details>
+        </SchemaItem>
+      </ul>
+    </details>
+  </TabItem>
+</MimeTabs><div>
+  <div>
+    <ApiTabs
+      label={undefined}
+      id={undefined}
+    >
+      <TabItem
+        label={"200"}
+        value={"200"}
+      >
+        <div>
+          
+          
+          Success.
+          
+          
+        </div><div>
+          
+        </div>
+      </TabItem><TabItem
+        label={"201"}
+        value={"201"}
+      >
+        <div>
+          
+          
+          Invalid access token.
+          
+          
+        </div><div>
+          
+        </div>
+      </TabItem><TabItem
+        label={"598"}
+        value={"598"}
+      >
+        <div>
+          
+          
+          Invalid header column.
+          
+          
+        </div><div>
+          
+        </div>
+      </TabItem>
+    </ApiTabs>
+  </div>
+</div>
+      

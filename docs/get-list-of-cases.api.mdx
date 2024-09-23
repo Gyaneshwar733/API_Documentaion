@@ -1,0 +1,254 @@
+---
+id: get-list-of-cases
+title: "Get list of cases"
+description: "overview"
+sidebar_label: "Get list of cases"
+hide_title: true
+hide_table_of_contents: true
+api: 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
+sidebar_class_name: "post api-method"
+info_path: docs/seerportal-api
+custom_edit_url: null
+---
+
+import ApiTabs from "@theme/ApiTabs";
+import DiscriminatorTabs from "@theme/DiscriminatorTabs";
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import SecuritySchemes from "@theme/ApiExplorer/SecuritySchemes";
+import MimeTabs from "@theme/MimeTabs";
+import ParamsItem from "@theme/ParamsItem";
+import ResponseSamples from "@theme/ResponseSamples";
+import SchemaItem from "@theme/SchemaItem";
+import SchemaTabs from "@theme/SchemaTabs";
+import Heading from "@theme/Heading";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Get list of cases"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"post"}
+  path={"/cases/get-list"}
+>
+  
+</MethodEndpoint>
+
+
+
+overview
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<details
+  style={{"marginBottom":"1rem"}}
+  className={"openapi-markdown__details"}
+  data-collapsed={false}
+  open={true}
+>
+  <summary
+    style={{}}
+  >
+    <h3
+      className={"openapi-markdown__details-summary-header-params"}
+    >
+      Query Parameters
+    </h3>
+  </summary><div>
+    <ul>
+      <ParamsItem
+        className={"paramsItem"}
+        param={{"name":"zone","in":"query","description":"Enter the zone","required":true,"schema":{"type":"string","default":"Asia/Calcutta"}}}
+      >
+        
+      </ParamsItem>
+    </ul>
+  </div>
+</details><details
+  style={{"marginBottom":"1rem"}}
+  className={"openapi-markdown__details"}
+  data-collapsed={false}
+  open={true}
+>
+  <summary
+    style={{}}
+  >
+    <h3
+      className={"openapi-markdown__details-summary-header-params"}
+    >
+      Header Parameters
+    </h3>
+  </summary><div>
+    <ul>
+      <ParamsItem
+        className={"paramsItem"}
+        param={{"name":"mode","in":"header","description":"mode in header","required":true,"schema":{"type":"string","default":"internal"}}}
+      >
+        
+      </ParamsItem>
+    </ul>
+  </div>
+</details><MimeTabs
+  className={"openapi-tabs__mime"}
+>
+  <TabItem
+    label={"application/json"}
+    value={"application/json-schema"}
+  >
+    <details
+      style={{}}
+      className={"openapi-markdown__details mime"}
+      data-collapsed={false}
+      open={true}
+    >
+      <summary
+        style={{}}
+        className={"openapi-markdown__details-summary-mime"}
+      >
+        <h3
+          className={"openapi-markdown__details-summary-header-body"}
+        >
+          Body
+        </h3><strong
+          className={"openapi-schema__required"}
+        >
+          required
+        </strong>
+      </summary><div
+        style={{"textAlign":"left","marginLeft":"1rem"}}
+      >
+        <div
+          style={{"marginTop":"1rem","marginBottom":"1rem"}}
+        >
+          
+          
+          Enter the status as 1,2,5
+          
+          
+        </div>
+      </div><ul
+        style={{"marginLeft":"1rem"}}
+      >
+        <SchemaItem
+          collapsible={false}
+          name={"from_date"}
+          required={false}
+          schemaName={"date"}
+          qualifierMessage={undefined}
+          schema={{"type":"string","format":"date"}}
+        >
+          
+        </SchemaItem><SchemaItem
+          collapsible={false}
+          name={"to_date"}
+          required={false}
+          schemaName={"date"}
+          qualifierMessage={undefined}
+          schema={{"type":"string","format":"date"}}
+        >
+          
+        </SchemaItem><SchemaItem
+          collapsible={false}
+          name={"pageSize"}
+          required={false}
+          schemaName={"int32"}
+          qualifierMessage={undefined}
+          schema={{"type":"integer","format":"int32","default":12}}
+        >
+          
+        </SchemaItem><SchemaItem
+          collapsible={false}
+          name={"pageIndex"}
+          required={false}
+          schemaName={"int32"}
+          qualifierMessage={undefined}
+          schema={{"type":"integer","format":"int32","default":1}}
+        >
+          
+        </SchemaItem><SchemaItem
+          collapsible={false}
+          name={"byDateType"}
+          required={false}
+          schemaName={"string"}
+          qualifierMessage={undefined}
+          schema={{"type":"string","default":"created_at"}}
+        >
+          
+        </SchemaItem><SchemaItem
+          collapsible={false}
+          name={"sortColumn"}
+          required={false}
+          schemaName={"string"}
+          qualifierMessage={undefined}
+          schema={{"type":"string","default":"modified_at"}}
+        >
+          
+        </SchemaItem><SchemaItem
+          collapsible={false}
+          name={"sortOrder"}
+          required={false}
+          schemaName={"string"}
+          qualifierMessage={undefined}
+          schema={{"type":"string","default":"descend"}}
+        >
+          
+        </SchemaItem><SchemaItem
+          collapsible={false}
+          name={"status"}
+          required={false}
+          schemaName={"string"}
+          qualifierMessage={undefined}
+          schema={{"type":"string","default":"1"}}
+        >
+          
+        </SchemaItem>
+      </ul>
+    </details>
+  </TabItem>
+</MimeTabs><div>
+  <div>
+    <ApiTabs
+      label={undefined}
+      id={undefined}
+    >
+      <TabItem
+        label={"200"}
+        value={"200"}
+      >
+        <div>
+          
+          
+          Success
+          
+          
+        </div><div>
+          
+        </div>
+      </TabItem><TabItem
+        label={"201"}
+        value={"201"}
+      >
+        <div>
+          
+          
+          Invalid Access Token
+          
+          
+        </div><div>
+          
+        </div>
+      </TabItem>
+    </ApiTabs>
+  </div>
+</div>
+      

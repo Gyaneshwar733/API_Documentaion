@@ -1,0 +1,171 @@
+---
+id: user-session-logins-report
+title: "User session logins report"
+description: "The API provides detailed reports on user session logins, allowing you to retrieve login data based on user ID and specified date ranges. The report can be customized based on the chart type."
+sidebar_label: "User session logins report"
+hide_title: true
+hide_table_of_contents: true
+api: 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
+sidebar_class_name: "post api-method"
+info_path: docs/seerportal-api
+custom_edit_url: null
+---
+
+import ApiTabs from "@theme/ApiTabs";
+import DiscriminatorTabs from "@theme/DiscriminatorTabs";
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import SecuritySchemes from "@theme/ApiExplorer/SecuritySchemes";
+import MimeTabs from "@theme/MimeTabs";
+import ParamsItem from "@theme/ParamsItem";
+import ResponseSamples from "@theme/ResponseSamples";
+import SchemaItem from "@theme/SchemaItem";
+import SchemaTabs from "@theme/SchemaTabs";
+import Heading from "@theme/Heading";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"User session logins report"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"post"}
+  path={"/userDetails/user-session-logins-report"}
+>
+  
+</MethodEndpoint>
+
+
+
+The API provides detailed reports on user session logins, allowing you to retrieve login data based on user ID and specified date ranges. The report can be customized based on the chart type.
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<MimeTabs
+  className={"openapi-tabs__mime"}
+>
+  <TabItem
+    label={"application/json"}
+    value={"application/json-schema"}
+  >
+    <details
+      style={{}}
+      className={"openapi-markdown__details mime"}
+      data-collapsed={false}
+      open={true}
+    >
+      <summary
+        style={{}}
+        className={"openapi-markdown__details-summary-mime"}
+      >
+        <h3
+          className={"openapi-markdown__details-summary-header-body"}
+        >
+          Body
+        </h3><strong
+          className={"openapi-schema__required"}
+        >
+          required
+        </strong>
+      </summary><div
+        style={{"textAlign":"left","marginLeft":"1rem"}}
+      >
+        
+      </div><ul
+        style={{"marginLeft":"1rem"}}
+      >
+        <SchemaItem
+          collapsible={false}
+          name={"user_id"}
+          required={false}
+          schemaName={"string"}
+          qualifierMessage={undefined}
+          schema={{"type":"string","default":"2572","description":"The unique identifier for the user whose session login report is requested."}}
+        >
+          
+        </SchemaItem><SchemaItem
+          collapsible={false}
+          name={"from_date"}
+          required={false}
+          schemaName={"date"}
+          qualifierMessage={undefined}
+          schema={{"type":"string","format":"date","description":"The start date for retreving the login reports in **YYY-MM-DD** format."}}
+        >
+          
+        </SchemaItem><SchemaItem
+          collapsible={false}
+          name={"chartType"}
+          required={false}
+          schemaName={"string"}
+          qualifierMessage={undefined}
+          schema={{"type":"string","default":"1","description":"The type of chart used for visualizing the reports. e.g: **1** for bar charts, **2** for line charts."}}
+        >
+          
+        </SchemaItem>
+      </ul>
+    </details>
+  </TabItem>
+</MimeTabs><div>
+  <div>
+    <ApiTabs
+      label={undefined}
+      id={undefined}
+    >
+      <TabItem
+        label={"200"}
+        value={"200"}
+      >
+        <div>
+          
+          
+          Success.
+          
+          
+        </div><div>
+          
+        </div>
+      </TabItem><TabItem
+        label={"201"}
+        value={"201"}
+      >
+        <div>
+          
+          
+          Invalid access token.
+          
+          
+        </div><div>
+          
+        </div>
+      </TabItem><TabItem
+        label={"405"}
+        value={"405"}
+      >
+        <div>
+          
+          
+          from_date is required,  
+          user_id must be a number,  
+          user_id is required,  
+          user_ is not allowed,  
+          chartType is invalid,  
+          chartType must be a number.
+          
+          
+        </div><div>
+          
+        </div>
+      </TabItem>
+    </ApiTabs>
+  </div>
+</div>
+      

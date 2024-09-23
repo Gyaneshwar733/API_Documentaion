@@ -1,0 +1,180 @@
+---
+id: user-activity-report
+title: "User activity report"
+description: "The API allows you to retreive detailed activity report for a specific user. You can either retrieve activity starting from a specific date (**from_date**) or retrieve reports for the past 7 days ending on a specific date (**last_7_day**)."
+sidebar_label: "User activity report"
+hide_title: true
+hide_table_of_contents: true
+api: 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
+sidebar_class_name: "post api-method"
+info_path: docs/seerportal-api
+custom_edit_url: null
+---
+
+import ApiTabs from "@theme/ApiTabs";
+import DiscriminatorTabs from "@theme/DiscriminatorTabs";
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import SecuritySchemes from "@theme/ApiExplorer/SecuritySchemes";
+import MimeTabs from "@theme/MimeTabs";
+import ParamsItem from "@theme/ParamsItem";
+import ResponseSamples from "@theme/ResponseSamples";
+import SchemaItem from "@theme/SchemaItem";
+import SchemaTabs from "@theme/SchemaTabs";
+import Heading from "@theme/Heading";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"User activity report"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"post"}
+  path={"/userDetails/user-activity-report"}
+>
+  
+</MethodEndpoint>
+
+
+
+The API allows you to retreive detailed activity report for a specific user. You can either retrieve activity starting from a specific date (**from_date**) or retrieve reports for the past 7 days ending on a specific date (**last_7_day**).
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<MimeTabs
+  className={"openapi-tabs__mime"}
+>
+  <TabItem
+    label={"application/json"}
+    value={"application/json-schema"}
+  >
+    <details
+      style={{}}
+      className={"openapi-markdown__details mime"}
+      data-collapsed={false}
+      open={true}
+    >
+      <summary
+        style={{}}
+        className={"openapi-markdown__details-summary-mime"}
+      >
+        <h3
+          className={"openapi-markdown__details-summary-header-body"}
+        >
+          Body
+        </h3><strong
+          className={"openapi-schema__required"}
+        >
+          required
+        </strong>
+      </summary><div
+        style={{"textAlign":"left","marginLeft":"1rem"}}
+      >
+        
+      </div><ul
+        style={{"marginLeft":"1rem"}}
+      >
+        <SchemaItem
+          collapsible={false}
+          name={"user_id"}
+          required={false}
+          schemaName={"string"}
+          qualifierMessage={undefined}
+          schema={{"type":"string","default":"99077","description":"The unique identifier for the user. e.g: **99077**"}}
+        >
+          
+        </SchemaItem><SchemaItem
+          collapsible={false}
+          name={"from_date"}
+          required={false}
+          schemaName={"date"}
+          qualifierMessage={undefined}
+          schema={{"type":"string","format":"date","description":"The start date for the activity report in **YYYY-MM-DD** format."}}
+        >
+          
+        </SchemaItem><SchemaItem
+          collapsible={false}
+          name={"last_7_day"}
+          required={false}
+          schemaName={"date"}
+          qualifierMessage={undefined}
+          schema={{"type":"string","format":"date","description":"The report will show activity for the 7 days up to and including the specified date. When this is used, the **from_date** parameter will be ignored."}}
+        >
+          
+        </SchemaItem>
+      </ul>
+    </details>
+  </TabItem>
+</MimeTabs><div>
+  <div>
+    <ApiTabs
+      label={undefined}
+      id={undefined}
+    >
+      <TabItem
+        label={"200"}
+        value={"200"}
+      >
+        <div>
+          
+          
+          Success.
+          
+          
+        </div><div>
+          
+        </div>
+      </TabItem><TabItem
+        label={"201"}
+        value={"201"}
+      >
+        <div>
+          
+          
+          Invalid access token.
+          
+          
+        </div><div>
+          
+        </div>
+      </TabItem><TabItem
+        label={"405"}
+        value={"405"}
+      >
+        <div>
+          
+          
+          from_date is required,  
+          date is not allowed.
+          
+          
+        </div><div>
+          
+        </div>
+      </TabItem><TabItem
+        label={"412"}
+        value={"412"}
+      >
+        <div>
+          
+          
+          No record found.
+          
+          
+        </div><div>
+          
+        </div>
+      </TabItem>
+    </ApiTabs>
+  </div>
+</div>
+      

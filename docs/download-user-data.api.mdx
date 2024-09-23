@@ -1,0 +1,168 @@
+---
+id: download-user-data
+title: "Download user data"
+description: "The API exports and downloads the user data based on the specified parameters. It allows for downloading either all user's data or subset, depending on the request prameters."
+sidebar_label: "Download user data"
+hide_title: true
+hide_table_of_contents: true
+api: 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
+sidebar_class_name: "get api-method"
+info_path: docs/seerportal-api
+custom_edit_url: null
+---
+
+import ApiTabs from "@theme/ApiTabs";
+import DiscriminatorTabs from "@theme/DiscriminatorTabs";
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import SecuritySchemes from "@theme/ApiExplorer/SecuritySchemes";
+import MimeTabs from "@theme/MimeTabs";
+import ParamsItem from "@theme/ParamsItem";
+import ResponseSamples from "@theme/ResponseSamples";
+import SchemaItem from "@theme/SchemaItem";
+import SchemaTabs from "@theme/SchemaTabs";
+import Heading from "@theme/Heading";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Download user data"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/userDetails/export-user-data"}
+>
+  
+</MethodEndpoint>
+
+
+
+The API exports and downloads the user data based on the specified parameters. It allows for downloading either all user's data or subset, depending on the request prameters.
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<details
+  style={{"marginBottom":"1rem"}}
+  className={"openapi-markdown__details"}
+  data-collapsed={false}
+  open={true}
+>
+  <summary
+    style={{}}
+  >
+    <h3
+      className={"openapi-markdown__details-summary-header-params"}
+    >
+      Query Parameters
+    </h3>
+  </summary><div>
+    <ul>
+      <ParamsItem
+        className={"paramsItem"}
+        param={{"name":"isAllSelected","in":"query","description":"Determines weather to export data for all user or a subset. Option **ALL** (export all user) or specify user IDs.","required":true,"schema":{"type":"string","default":"ALL"}}}
+      >
+        
+      </ParamsItem><ParamsItem
+        className={"paramsItem"}
+        param={{"name":"type","in":"query","description":"Specify the type of data to export. This could be a specific dataset, such as **data**, **sample**.","required":true,"schema":{"type":"string","enum":["data","sample"]}}}
+      >
+        
+      </ParamsItem>
+    </ul>
+  </div>
+</details><details
+  style={{"marginBottom":"1rem"}}
+  className={"openapi-markdown__details"}
+  data-collapsed={false}
+  open={true}
+>
+  <summary
+    style={{}}
+  >
+    <h3
+      className={"openapi-markdown__details-summary-header-params"}
+    >
+      Header Parameters
+    </h3>
+  </summary><div>
+    <ul>
+      <ParamsItem
+        className={"paramsItem"}
+        param={{"name":"mode","in":"header","description":"Specifies the mode of request. Typically used for internal request.","required":true,"schema":{"type":"string","default":"internal"}}}
+      >
+        
+      </ParamsItem>
+    </ul>
+  </div>
+</details><div>
+  <div>
+    <ApiTabs
+      label={undefined}
+      id={undefined}
+    >
+      <TabItem
+        label={"200"}
+        value={"200"}
+      >
+        <div>
+          
+          
+          Success.
+          
+          
+        </div><div>
+          
+        </div>
+      </TabItem><TabItem
+        label={"201"}
+        value={"201"}
+      >
+        <div>
+          
+          
+          Invalid access token.
+          
+          
+        </div><div>
+          
+        </div>
+      </TabItem><TabItem
+        label={"405"}
+        value={"405"}
+      >
+        <div>
+          
+          
+          isAllSelected is required.
+          
+          
+        </div><div>
+          
+        </div>
+      </TabItem><TabItem
+        label={"412"}
+        value={"412"}
+      >
+        <div>
+          
+          
+          No record found.
+          
+          
+        </div><div>
+          
+        </div>
+      </TabItem>
+    </ApiTabs>
+  </div>
+</div>
+      

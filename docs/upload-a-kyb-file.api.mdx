@@ -1,0 +1,480 @@
+---
+id: upload-a-kyb-file
+title: "Upload a KYB file"
+description: "Verify/SeerIDB"
+sidebar_label: "Upload a KYB file"
+hide_title: true
+hide_table_of_contents: true
+api: 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
+sidebar_class_name: "post api-method"
+info_path: docs/seerportal-api
+custom_edit_url: null
+---
+
+import ApiTabs from "@theme/ApiTabs";
+import DiscriminatorTabs from "@theme/DiscriminatorTabs";
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import SecuritySchemes from "@theme/ApiExplorer/SecuritySchemes";
+import MimeTabs from "@theme/MimeTabs";
+import ParamsItem from "@theme/ParamsItem";
+import ResponseSamples from "@theme/ResponseSamples";
+import SchemaItem from "@theme/SchemaItem";
+import SchemaTabs from "@theme/SchemaTabs";
+import Heading from "@theme/Heading";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Upload a KYB file"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"post"}
+  path={"/seer_idb/bulk_upload"}
+>
+  
+</MethodEndpoint>
+
+
+
+Verify/SeerIDB
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<details
+  style={{"marginBottom":"1rem"}}
+  className={"openapi-markdown__details"}
+  data-collapsed={false}
+  open={true}
+>
+  <summary
+    style={{}}
+  >
+    <h3
+      className={"openapi-markdown__details-summary-header-params"}
+    >
+      Header Parameters
+    </h3>
+  </summary><div>
+    <ul>
+      <ParamsItem
+        className={"paramsItem"}
+        param={{"name":"mode","in":"header","description":"mode in header","required":true,"schema":{"type":"string","default":"internal"}}}
+      >
+        
+      </ParamsItem>
+    </ul>
+  </div>
+</details><MimeTabs
+  className={"openapi-tabs__mime"}
+>
+  <TabItem
+    label={"application/json"}
+    value={"application/json-schema"}
+  >
+    <details
+      style={{}}
+      className={"openapi-markdown__details mime"}
+      data-collapsed={false}
+      open={true}
+    >
+      <summary
+        style={{}}
+        className={"openapi-markdown__details-summary-mime"}
+      >
+        <h3
+          className={"openapi-markdown__details-summary-header-body"}
+        >
+          Body
+        </h3><strong
+          className={"openapi-schema__required"}
+        >
+          required
+        </strong>
+      </summary><div
+        style={{"textAlign":"left","marginLeft":"1rem"}}
+      >
+        <div
+          style={{"marginTop":"1rem","marginBottom":"1rem"}}
+        >
+          
+          
+          Add the object
+          ** We can add multiple entries seperated by comma (,)in the data array
+          
+          
+        </div>
+      </div><ul
+        style={{"marginLeft":"1rem"}}
+      >
+        <SchemaItem
+          collapsible={true}
+          className={"schemaItem"}
+        >
+          <details
+            style={{}}
+            className={"openapi-markdown__details"}
+          >
+            <summary
+              style={{}}
+            >
+              <span
+                className={"openapi-schema__container"}
+              >
+                <strong
+                  className={"openapi-schema__property"}
+                >
+                  data
+                </strong><span
+                  className={"openapi-schema__name"}
+                >
+                   object[]
+                </span>
+              </span>
+            </summary><div
+              style={{"marginLeft":"1rem"}}
+            >
+              <li>
+                <div
+                  style={{"fontSize":"var(--ifm-code-font-size)","opacity":"0.6","marginLeft":"-.5rem","paddingBottom":".5rem"}}
+                >
+                  Array [
+                </div>
+              </li><SchemaItem
+                collapsible={false}
+                name={"processor_id"}
+                required={false}
+                schemaName={"string"}
+                qualifierMessage={undefined}
+                schema={{"type":"string","default":"20"}}
+              >
+                
+              </SchemaItem><SchemaItem
+                collapsible={false}
+                name={"program_id"}
+                required={false}
+                schemaName={"string"}
+                qualifierMessage={undefined}
+                schema={{"type":"string","default":"12"}}
+              >
+                
+              </SchemaItem><SchemaItem
+                collapsible={false}
+                name={"product_id"}
+                required={false}
+                schemaName={"string"}
+                qualifierMessage={undefined}
+                schema={{"type":"string","default":"45"}}
+              >
+                
+              </SchemaItem><SchemaItem
+                collapsible={false}
+                name={"group_id"}
+                required={false}
+                schemaName={"string"}
+                qualifierMessage={undefined}
+                schema={{"type":"string","default":"14"}}
+              >
+                
+              </SchemaItem><SchemaItem
+                collapsible={false}
+                name={"company_name"}
+                required={false}
+                schemaName={"string"}
+                qualifierMessage={undefined}
+                schema={{"type":"string","default":"ADVANCED HAIR REPAIR"}}
+              >
+                
+              </SchemaItem><SchemaItem
+                collapsible={false}
+                name={"fein"}
+                required={false}
+                schemaName={"string"}
+                qualifierMessage={undefined}
+                schema={{"type":"string","default":"760508505"}}
+              >
+                
+              </SchemaItem><SchemaItem
+                collapsible={false}
+                name={"contact_number"}
+                required={false}
+                schemaName={"string"}
+                qualifierMessage={undefined}
+                schema={{"type":"string","default":"5032662300"}}
+              >
+                
+              </SchemaItem><SchemaItem
+                collapsible={false}
+                name={"address_1"}
+                required={false}
+                schemaName={"string"}
+                qualifierMessage={undefined}
+                schema={{"type":"string","default":"1201 LAKE WOODLANDS DR STE 1000"}}
+              >
+                
+              </SchemaItem><SchemaItem
+                collapsible={false}
+                name={"city"}
+                required={false}
+                schemaName={"string"}
+                qualifierMessage={undefined}
+                schema={{"type":"string","default":"JOHNSTOWN"}}
+              >
+                
+              </SchemaItem><SchemaItem
+                collapsible={false}
+                name={"state"}
+                required={false}
+                schemaName={"string"}
+                qualifierMessage={undefined}
+                schema={{"type":"string","default":"OH"}}
+              >
+                
+              </SchemaItem><SchemaItem
+                collapsible={false}
+                name={"zip"}
+                required={false}
+                schemaName={"string"}
+                qualifierMessage={undefined}
+                schema={{"type":"string","default":"80304"}}
+              >
+                
+              </SchemaItem><SchemaItem
+                collapsible={false}
+                name={"rep1_first_name"}
+                required={false}
+                schemaName={"string"}
+                qualifierMessage={undefined}
+                schema={{"type":"string","default":"RUBEN"}}
+              >
+                
+              </SchemaItem><SchemaItem
+                collapsible={false}
+                name={"rep1_last_name"}
+                required={false}
+                schemaName={"string"}
+                qualifierMessage={undefined}
+                schema={{"type":"string","default":"PHILIS"}}
+              >
+                
+              </SchemaItem><SchemaItem
+                collapsible={false}
+                name={"rep1_contact_number"}
+                required={false}
+                schemaName={"string"}
+                qualifierMessage={undefined}
+                schema={{"type":"string","default":"7859451564"}}
+              >
+                
+              </SchemaItem><SchemaItem
+                collapsible={false}
+                name={"rep1_ssn"}
+                required={false}
+                schemaName={"string"}
+                qualifierMessage={undefined}
+                schema={{"type":"string","default":"534194012"}}
+              >
+                
+              </SchemaItem><SchemaItem
+                collapsible={false}
+                name={"rep1_driver_license_number"}
+                required={false}
+                schemaName={"string"}
+                qualifierMessage={undefined}
+                schema={{"type":"string","default":"5867743"}}
+              >
+                
+              </SchemaItem><SchemaItem
+                collapsible={false}
+                name={"rep1_driver_license_issuer"}
+                required={false}
+                schemaName={"string"}
+                qualifierMessage={undefined}
+                schema={{"type":"string","default":"ME"}}
+              >
+                
+              </SchemaItem><SchemaItem
+                collapsible={false}
+                name={"rep1_passport_number"}
+                required={false}
+                schemaName={"string"}
+                qualifierMessage={undefined}
+                schema={{"type":"string","default":"414432674"}}
+              >
+                
+              </SchemaItem><SchemaItem
+                collapsible={false}
+                name={"rep1_address_1"}
+                required={false}
+                schemaName={"string"}
+                qualifierMessage={undefined}
+                schema={{"type":"string","default":"367 SEAPORT DR"}}
+              >
+                
+              </SchemaItem><SchemaItem
+                collapsible={false}
+                name={"rep1_city"}
+                required={false}
+                schemaName={"string"}
+                qualifierMessage={undefined}
+                schema={{"type":"string","default":"WEST CHESTER"}}
+              >
+                
+              </SchemaItem><SchemaItem
+                collapsible={false}
+                name={"rep1_state"}
+                required={false}
+                schemaName={"string"}
+                qualifierMessage={undefined}
+                schema={{"type":"string","default":"OH"}}
+              >
+                
+              </SchemaItem><SchemaItem
+                collapsible={false}
+                name={"rep1_zip"}
+                required={false}
+                schemaName={"string"}
+                qualifierMessage={undefined}
+                schema={{"type":"string","default":"86336"}}
+              >
+                
+              </SchemaItem><SchemaItem
+                collapsible={false}
+                name={"rep2_first_name"}
+                required={false}
+                schemaName={"string"}
+                qualifierMessage={undefined}
+                schema={{"type":"string","default":"ISACC"}}
+              >
+                
+              </SchemaItem><SchemaItem
+                collapsible={false}
+                name={"rep2_last_name"}
+                required={false}
+                schemaName={"string"}
+                qualifierMessage={undefined}
+                schema={{"type":"string","default":"ISOPHE"}}
+              >
+                
+              </SchemaItem><SchemaItem
+                collapsible={false}
+                name={"rep2_contact_number"}
+                required={false}
+                schemaName={"string"}
+                qualifierMessage={undefined}
+                schema={{"type":"string","default":"7859451564"}}
+              >
+                
+              </SchemaItem><SchemaItem
+                collapsible={false}
+                name={"rep2_ssn"}
+                required={false}
+                schemaName={"string"}
+                qualifierMessage={undefined}
+                schema={{"type":"string","default":"552613646"}}
+              >
+                
+              </SchemaItem><SchemaItem
+                collapsible={false}
+                name={"rep2_address_1"}
+                required={false}
+                schemaName={"string"}
+                qualifierMessage={undefined}
+                schema={{"type":"string","default":"111 WOMRATH CT"}}
+              >
+                
+              </SchemaItem><SchemaItem
+                collapsible={false}
+                name={"rep2_city"}
+                required={false}
+                schemaName={"string"}
+                qualifierMessage={undefined}
+                schema={{"type":"string","default":"GLENDALE"}}
+              >
+                
+              </SchemaItem><SchemaItem
+                collapsible={false}
+                name={"rep2_state"}
+                required={false}
+                schemaName={"string"}
+                qualifierMessage={undefined}
+                schema={{"type":"string","default":"AZ"}}
+              >
+                
+              </SchemaItem><SchemaItem
+                collapsible={false}
+                name={"rep2_zip"}
+                required={false}
+                schemaName={"string"}
+                qualifierMessage={undefined}
+                schema={{"type":"string","default":"83014"}}
+              >
+                
+              </SchemaItem><li>
+                <div
+                  style={{"fontSize":"var(--ifm-code-font-size)","opacity":"0.6","marginLeft":"-.5rem"}}
+                >
+                  ]
+                </div>
+              </li>
+            </div>
+          </details>
+        </SchemaItem><SchemaItem
+          collapsible={false}
+          name={"fileName"}
+          required={false}
+          schemaName={"string"}
+          qualifierMessage={undefined}
+          schema={{"type":"string","default":"20211022043145kybvalidator_bulk_upload_template.csv"}}
+        >
+          
+        </SchemaItem>
+      </ul>
+    </details>
+  </TabItem>
+</MimeTabs><div>
+  <div>
+    <ApiTabs
+      label={undefined}
+      id={undefined}
+    >
+      <TabItem
+        label={"200"}
+        value={"200"}
+      >
+        <div>
+          
+          
+          File will be processed in next cron cycle
+          
+          
+        </div><div>
+          
+        </div>
+      </TabItem><TabItem
+        label={"201"}
+        value={"201"}
+      >
+        <div>
+          
+          
+          Invalid Access Token
+          
+          
+        </div><div>
+          
+        </div>
+      </TabItem>
+    </ApiTabs>
+  </div>
+</div>
+      

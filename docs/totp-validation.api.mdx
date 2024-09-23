@@ -1,0 +1,174 @@
+---
+id: totp-validation
+title: "TOTP validation"
+description: "The API validates a Time-Based One-Time Password (TOTP) for two-factor authentication (2FA). After validation, it provides an authentication token, enables the user to access protected resources."
+sidebar_label: "TOTP validation"
+hide_title: true
+hide_table_of_contents: true
+api: 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
+sidebar_class_name: "post api-method"
+info_path: docs/seerportal-api
+custom_edit_url: null
+---
+
+import ApiTabs from "@theme/ApiTabs";
+import DiscriminatorTabs from "@theme/DiscriminatorTabs";
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import SecuritySchemes from "@theme/ApiExplorer/SecuritySchemes";
+import MimeTabs from "@theme/MimeTabs";
+import ParamsItem from "@theme/ParamsItem";
+import ResponseSamples from "@theme/ResponseSamples";
+import SchemaItem from "@theme/SchemaItem";
+import SchemaTabs from "@theme/SchemaTabs";
+import Heading from "@theme/Heading";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"TOTP validation"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"post"}
+  path={"/userDetails/totp-validate"}
+>
+  
+</MethodEndpoint>
+
+
+
+The API validates a Time-Based One-Time Password (TOTP) for two-factor authentication (2FA). After validation, it provides an authentication token, enables the user to access protected resources.
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<MimeTabs
+  className={"openapi-tabs__mime"}
+>
+  <TabItem
+    label={"application/json"}
+    value={"application/json-schema"}
+  >
+    <details
+      style={{}}
+      className={"openapi-markdown__details mime"}
+      data-collapsed={false}
+      open={true}
+    >
+      <summary
+        style={{}}
+        className={"openapi-markdown__details-summary-mime"}
+      >
+        <h3
+          className={"openapi-markdown__details-summary-header-body"}
+        >
+          Body
+        </h3><strong
+          className={"openapi-schema__required"}
+        >
+          required
+        </strong>
+      </summary><div
+        style={{"textAlign":"left","marginLeft":"1rem"}}
+      >
+        
+      </div><ul
+        style={{"marginLeft":"1rem"}}
+      >
+        <SchemaItem
+          collapsible={false}
+          name={"data"}
+          required={false}
+          schemaName={"string"}
+          qualifierMessage={undefined}
+          schema={{"type":"string","default":"3ee8d064a5b414faea7159646c6da682448e5c79c92315d9cb43c25506362d9092ad4d2efec47b02ae61617949aad5d6b0e210408c4edff34ef61d28ad47761a1155aaa92c42c7a38da90f5e0fe3dcd653b44cabdad943ee4eab7306d2f273573012081ab5397cb7cc9f9c655effcb1ba4e4e050b1be2750ea93d46f2833058f35e432ff4828dc52fbcdc5d24b39627d2cb03271aca6d3b0339b70d38dd27bf120173969ab11f73409357abf16fd86eb44672ddce8b9fb5be4a40b2d679c00c371c5434c398c79f4be136776c27e2d0e773a74ea3045d390e93b6922734de01c71b23ce4b24a3b4ef2cb271fc9d1bf45adef9304d97446394c57287dc865ce6e86eda707cfc8682ee7846aaaf3193eeebfdd5692717dc5d6fbf9","description":"The encrypted login information that securely represents the user's credentials for authentication."}}
+        >
+          
+        </SchemaItem>
+      </ul>
+    </details>
+  </TabItem>
+</MimeTabs><div>
+  <div>
+    <ApiTabs
+      label={undefined}
+      id={undefined}
+    >
+      <TabItem
+        label={"200"}
+        value={"200"}
+      >
+        <div>
+          
+          
+          Success.
+          
+          
+        </div><div>
+          
+        </div>
+      </TabItem><TabItem
+        label={"201"}
+        value={"201"}
+      >
+        <div>
+          
+          
+          Invalid access token.
+          
+          
+        </div><div>
+          
+        </div>
+      </TabItem><TabItem
+        label={"405"}
+        value={"405"}
+      >
+        <div>
+          
+          
+          totp is required, Please enter a valid data, data field is required.
+          
+          
+        </div><div>
+          
+        </div>
+      </TabItem><TabItem
+        label={"588"}
+        value={"588"}
+      >
+        <div>
+          
+          
+          Invalid 2FA Token You have 2 attempts remaining.
+          
+          
+        </div><div>
+          
+        </div>
+      </TabItem><TabItem
+        label={"612"}
+        value={"612"}
+      >
+        <div>
+          
+          
+          2FA is not valid for the given user.
+          
+          
+        </div><div>
+          
+        </div>
+      </TabItem>
+    </ApiTabs>
+  </div>
+</div>
+      

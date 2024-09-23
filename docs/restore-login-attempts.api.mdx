@@ -1,0 +1,162 @@
+---
+id: restore-login-attempts
+title: "Restore login attempts."
+description: "The API allows to restore the login attempts for a specified user. It is useful for resetting the login attempts count, especially after a user successfully logs in or if there was an error tracking the login attempts."
+sidebar_label: "Restore login attempts."
+hide_title: true
+hide_table_of_contents: true
+api: eJzdWF1uI7kRvkqB++CdRrvlNSZBoqd4Z51Z705mDFtGHiwjoJolNdfdZA+L7R7FEJA75IY5SVBF6s929gCZB4/UXSxWffXVn55V1CtS03t1RxjgJ4zatqQeSmWQ6mD7aL1TUzVrEC6ur0C3rR8JooeAFH1AiA1C61fWgY4Ruz4SLH0ADdRjbZcWDQyEoYKrCJb483JoRSQgYYzWrd7SUfvBxRJQtOi2XYNeRmS9rA1oqGskWg78pvUrAuvAB7BLVhYQRk2gHWAIPkAMun58+6JKlSrg1wEp/ujNWk2fVe1dRBf5o+771taaQZj8RozEs6K6wU7zp7juUU2VX/yGdVSl6oPvMUSLxG/Zzn9YcyCoQ9BrVSobsaOD59ZFXGFQm7dQH5z9OiBYgy4ynAG8+JhwGBtPL1yCtR9g1C4eRKlSG/6XXLUBjZrGMOCmVIT1EGxcq+n9s/rl7zM1vX/YPLAg9d5RcuX87Iz/OzbuNoWgYrPPz354LXDlnnRrDWiRg+gf0Yn0+7M/vJbOcDFHtkaWAHMnz/mp8zHRD03S8sc/vdby2QsuBK2vH0VwU6oOY+ONmqrek8RJx0ZN1YQlM+MnGahPjORF5oZieMITBhJ0htCqqWpi7Gk6mUSkWBkdNSEGqqxTm/JQ5m2Rhz3it8yjhK/g/tKVS8d850gLcjA2tm4YiBU6DDqiYc5v45TTY58XiRSq3JGvt78is8/pTr4PsTkVzcxIvrBBbZiFm1Ix12/2WXH5TXd9i0esvj972PDBpX9t+ncwd/AdXLkYvBlqfjp3t4jh2oeoW3ZCw4gL6NP3gdCkqiHWc6bqts2++5Yz2UDnzdAigV8uMSTni+InHTUrpqKo5m7uOGP4e++Djq2ULEuw0HyBd3BzeTtjbPpgXW37FktAR0OQG4GidkYHY/+JRq7E5dLWFl2EUa857zhTg66laM3daGMjRiY3TgiWqOMQkHa2SM2sa+SS9svtl8+n6Gpv0ECuObDwxmJyMGAcgnsll/OwAtZ5FRks2pkKP89m15AITvB9ax8RPl7OSrj+cst/72bvsu5ME9a6FTw/OxPUM2lKeH/2Xh7MHSfb0g/OvOMqIhjxWUeWuDbCAhv9ZP3AIQueSOLF1U9qZfL/r6w6k70Ugey09I+Y0ekGRgGh0wbBP2GAomCnbouihD74iAluziMwKVQxaEedJbLeiXtztwuj3Mi2dt3gcu2GBcYR0e3rJh/iLym/xVyh7MUQGy606VyKYTqQiphUJ4rB1px/QoCTophxGhXFSQV3lOQ5yeSSXhONPhh2We+Vo1z5xdV49NSU3LQYlkdc57w/zPhyXwX4UEoc1pxLbGZ/TrOL66sKZo0lmLukawu2dXU7mJREHBgaFsSxcVEuP4zTEwa7XO+QO6HciuI6+YchB4L2KAopc/2AvyVyJizlzZb7O9rqljw8Oj860MQ3LugdGFxal+YLLmGcflpKyUH30y4Z2WNY+tCVW9phKljTuTuF4uPlrIBTFiuKjxiLInFpGXwHmsPph1BzQE4BCs6bnfSHgDri9oCOb4jfzQr4z7/+neTvevM78hmcHzUh3N18SoAs8rccUgie25wxgeOZO/3F9VWZQq2TEEUdJCl6b11MlbNtj0JXpWpxkg5IKqdU2Os8IUBnREUpseTBYTHYVkqljbBYsyWSVGmWq4FbJx0wzlipxi7C3G1d3Wd/DkPJY9m2b+reVvl5Vftu8vTDZOv7FotSLKm1gxXGFGkBdG9PUUjzpqJgW+aOg/97N4jwPgTXOugOIwZhpSUuGgIOfutbbV0yp99J7SYSgRp13TByCf0KfnV+zMMl4daXlL/Q6cfUW+buoDUfBCp3CkvbnKRE2mJnI3AtKYpTYLrgN11HecKB3FnIxMBvPUpVWqxT5kv0Bxpkeq4ZW0JHNtonrIB8ycahGMZjvAxOHHW5gudtAmr86KpkD3damK37nSnbpJTQxEbHQ8BSz6t2iQhFcRu5PhcFfB/xW3xXQlFcpcGXn13wKNsiuKFbYHiXL73JuE/gi8wWuuXbr5yRakkwouZx/2W4dOB+woz3Yc1rQWpnYdd0at22W7/2kwvrvoBFsLhMTHC7lBnZv6NbwPjctxs/7uHbk+xSVo+ftTOtdauj0SQX57da+a5RU9RxoNyvowebnYaxQfFZ7+oo7zpH/EoepxKwPBDk/etArkwVZ3vjwps19/goGWDSYLytF2mR4obHLWO7WKXVJ+VgH/yTNQgdb4VWUjLBpxd+iAnBUWap4N0KdsPTq0Q4Ut1g21Oe6QdnMAhcctASDanJRiay7nn/CpYxSo1CVKpS8QSfBtPz6v2fqzMeim3keVYdd0t+gaGjL8tbDE+2xv0sT6NerTBU1k9EZKJKWRR1LYsidtq2ssot/V9ebAWqtTU6kvE5D98Xva4bhHOx5XivGMex0vK68mE1yWdp8unqw+Xn28vT8+qsamLXypzOC02n3YHmm7yWv95yj0b0gy33/3u3z9sPl5yJ1HYOiCD+nPfAe3WwB8qvAW9sgg+lanh5nN6r52fuU3eh3Wz48dcBA2/PD6V60sHqBfPqnnejvE/x6viIazVVHxLkp1xFmZa6HdJm9uJHBt4SdzsrDySqVIv840TnDZ8JemRT9aimSpXKS1hll5Rnz6rVbjXoFcsmnUwXHjUPf4/o7aOshPkDW7p95daHFh7uiskX/ssL75vyz89p29xsdvLp1f88kbHaSsuqvNls/gtLNItx
+sidebar_class_name: "post api-method"
+info_path: docs/seerportal-api
+custom_edit_url: null
+---
+
+import ApiTabs from "@theme/ApiTabs";
+import DiscriminatorTabs from "@theme/DiscriminatorTabs";
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import SecuritySchemes from "@theme/ApiExplorer/SecuritySchemes";
+import MimeTabs from "@theme/MimeTabs";
+import ParamsItem from "@theme/ParamsItem";
+import ResponseSamples from "@theme/ResponseSamples";
+import SchemaItem from "@theme/SchemaItem";
+import SchemaTabs from "@theme/SchemaTabs";
+import Heading from "@theme/Heading";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Restore login attempts."}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"post"}
+  path={"/userDetails/restoreLoginAttempts"}
+>
+  
+</MethodEndpoint>
+
+
+
+The API allows to restore the login attempts for a specified user. It is useful for resetting the login attempts count, especially after a user successfully logs in or if there was an error tracking the login attempts.
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<MimeTabs
+  className={"openapi-tabs__mime"}
+>
+  <TabItem
+    label={"application/json"}
+    value={"application/json-schema"}
+  >
+    <details
+      style={{}}
+      className={"openapi-markdown__details mime"}
+      data-collapsed={false}
+      open={true}
+    >
+      <summary
+        style={{}}
+        className={"openapi-markdown__details-summary-mime"}
+      >
+        <h3
+          className={"openapi-markdown__details-summary-header-body"}
+        >
+          Body
+        </h3><strong
+          className={"openapi-schema__required"}
+        >
+          required
+        </strong>
+      </summary><div
+        style={{"textAlign":"left","marginLeft":"1rem"}}
+      >
+        
+      </div><ul
+        style={{"marginLeft":"1rem"}}
+      >
+        <SchemaItem
+          collapsible={false}
+          name={"user_id"}
+          required={false}
+          schemaName={"integer[]"}
+          qualifierMessage={undefined}
+          schema={{"type":"array","items":{"type":"integer"},"description":"The unique identifier of the user whose login attempt you want to restore."}}
+        >
+          
+        </SchemaItem>
+      </ul>
+    </details>
+  </TabItem>
+</MimeTabs><div>
+  <div>
+    <ApiTabs
+      label={undefined}
+      id={undefined}
+    >
+      <TabItem
+        label={"200"}
+        value={"200"}
+      >
+        <div>
+          
+          
+          Success.
+          
+          
+        </div><div>
+          
+        </div>
+      </TabItem><TabItem
+        label={"201"}
+        value={"201"}
+      >
+        <div>
+          
+          
+          Invalid access token.
+          
+          
+        </div><div>
+          
+        </div>
+      </TabItem><TabItem
+        label={"405"}
+        value={"405"}
+      >
+        <div>
+          
+          
+          user_id is required,  
+          user_ is not allowed.
+          
+          
+        </div><div>
+          
+        </div>
+      </TabItem><TabItem
+        label={"468"}
+        value={"468"}
+      >
+        <div>
+          
+          
+          No users locked.
+          
+          
+        </div><div>
+          
+        </div>
+      </TabItem>
+    </ApiTabs>
+  </div>
+</div>
+      

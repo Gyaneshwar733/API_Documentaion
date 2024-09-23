@@ -1,0 +1,311 @@
+---
+id: update-report-group
+title: "Update report group"
+description: "Report Group"
+sidebar_label: "Update report group"
+hide_title: true
+hide_table_of_contents: true
+api: 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
+sidebar_class_name: "post api-method"
+info_path: docs/seerportal-api
+custom_edit_url: null
+---
+
+import ApiTabs from "@theme/ApiTabs";
+import DiscriminatorTabs from "@theme/DiscriminatorTabs";
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import SecuritySchemes from "@theme/ApiExplorer/SecuritySchemes";
+import MimeTabs from "@theme/MimeTabs";
+import ParamsItem from "@theme/ParamsItem";
+import ResponseSamples from "@theme/ResponseSamples";
+import SchemaItem from "@theme/SchemaItem";
+import SchemaTabs from "@theme/SchemaTabs";
+import Heading from "@theme/Heading";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Update report group"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"post"}
+  path={"/reportGroups/update-report-group"}
+>
+  
+</MethodEndpoint>
+
+
+
+Report Group
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<details
+  style={{"marginBottom":"1rem"}}
+  className={"openapi-markdown__details"}
+  data-collapsed={false}
+  open={true}
+>
+  <summary
+    style={{}}
+  >
+    <h3
+      className={"openapi-markdown__details-summary-header-params"}
+    >
+      Header Parameters
+    </h3>
+  </summary><div>
+    <ul>
+      <ParamsItem
+        className={"paramsItem"}
+        param={{"name":"mode","in":"header","description":"mode in header","required":true,"schema":{"type":"string","default":"internal"}}}
+      >
+        
+      </ParamsItem>
+    </ul>
+  </div>
+</details><MimeTabs
+  className={"openapi-tabs__mime"}
+>
+  <TabItem
+    label={"application/json"}
+    value={"application/json-schema"}
+  >
+    <details
+      style={{}}
+      className={"openapi-markdown__details mime"}
+      data-collapsed={false}
+      open={true}
+    >
+      <summary
+        style={{}}
+        className={"openapi-markdown__details-summary-mime"}
+      >
+        <h3
+          className={"openapi-markdown__details-summary-header-body"}
+        >
+          Body
+        </h3><strong
+          className={"openapi-schema__required"}
+        >
+          required
+        </strong>
+      </summary><div
+        style={{"textAlign":"left","marginLeft":"1rem"}}
+      >
+        <div
+          style={{"marginTop":"1rem","marginBottom":"1rem"}}
+        >
+          
+          
+           **1.To get [ report_name ] and [ reportGroupId ]:** --&gt;Execute the API endpoint ( Admin & Billing ):
+          /reportGroups/get-list
+          ( **e.g.** "id": 942,     "name": "abcd12334")
+          
+          **2.To get [ short_code ] and [ config_data ]:**
+          --&gt;Execute the API endpoint ( Admin & Billing ):
+          /reportGroups/get-report-group
+          ( **e.g.** "short_code": "CS",
+          "config_data":
+          [ "70311",
+          "72032",
+          "66967"... ] )
+          
+          **3.For   [ isSelected ]:**
+          Description:
+          If Yes then 1 ,
+          If No then 0
+          (**e.g.** "isSelected": 1)
+          
+          **4.To get [ user_id ]:**
+          --&gt;Execute the API endpoint ( Admin & Billing ):
+          /userDetails/users
+          (**e.g.** "id": 2047,  "first_name": "Read Write Admin")
+          **5.We can add multiple short_code seperated by comma (,)in the data: such as**
+          ** Add [ short_code ]:
+          \{
+          "short_code": "CS",
+          "config_data": [ "70311", "72032", "66967", "66968", "66970", "66971", "66972", "66973", "66974", "66975", "66976", "66979", "66980", "66981", "66982", "66983", "66984", "66985", "66986", "66987", "66992", "66993", "66994", "66995", "66999", "66996", "66997", "66998", "67000", "66977", "67002", "67001", "67071", "67070", "67072", "67073", "67074", "67075", "67076", "67077", "67081", "67079", "67078", "67080", "67083", "67082", "67084", "67085", "67086", "67087", "67088", "67089", "67090", "67091", "67092", "67093", "67094", "67095", "67096", "67097", "67098", "67099", "67100", "67102", "67101", "67103", "67104", "67105", "67106", "67107", "67128", "67129", "67130", "67131", "67132", "67133", "67134", "67135", "67136", "67139", "67137", "67138", "67140", "67141", "67142", "67143", "67144", "67145", "67146", "67147", "67148", "67149", "67150", "67151", "67152", "67154", "67153", "67155", "67156", "67157", "67158", "67159", "67160", "67161", "67162", "67163", "67164", "67165", "67166", "67167", "67168", "67169", "67170", "67171", "67172", "67173", "67174", "67175", "67176", "67177", "67178", "67179", "67180", "67181", "67182", "67183", "67184", "67185", "67186", "67187", "67188", "67189", "67190", "67191", "67192", "67193", "67194", "67195", "67196", "67197", "67198", "67199", "67200", "67201", "67202", "67203", "67204", "67205", "67206", "67207", "67208", "67209", "67210", "67211", "67212", "67213", "67214", "67215", "67216", "67217", "67218", "67219", "67220", "66978", "67272" ], "isSelected": 1 \}, \{ "short_code": "FS", "config_data": [ "67257", "67256", "67258", "67259", "67260", "67261", "67262", "67263", "67264", "67265", "67266", "67267", "67285" ], "isSelected": 1 \}
+          
+          
+        </div>
+      </div><ul
+        style={{"marginLeft":"1rem"}}
+      >
+        <SchemaItem
+          collapsible={false}
+          name={"report_name"}
+          required={false}
+          schemaName={"string"}
+          qualifierMessage={undefined}
+          schema={{"type":"string","default":"abcd"}}
+        >
+          
+        </SchemaItem><SchemaItem
+          collapsible={true}
+          className={"schemaItem"}
+        >
+          <details
+            style={{}}
+            className={"openapi-markdown__details"}
+          >
+            <summary
+              style={{}}
+            >
+              <span
+                className={"openapi-schema__container"}
+              >
+                <strong
+                  className={"openapi-schema__property"}
+                >
+                  data
+                </strong><span
+                  className={"openapi-schema__name"}
+                >
+                   object[]
+                </span>
+              </span>
+            </summary><div
+              style={{"marginLeft":"1rem"}}
+            >
+              <li>
+                <div
+                  style={{"fontSize":"var(--ifm-code-font-size)","opacity":"0.6","marginLeft":"-.5rem","paddingBottom":".5rem"}}
+                >
+                  Array [
+                </div>
+              </li><SchemaItem
+                collapsible={false}
+                name={"short_code"}
+                required={false}
+                schemaName={"string"}
+                qualifierMessage={undefined}
+                schema={{"type":"string"}}
+              >
+                
+              </SchemaItem><SchemaItem
+                collapsible={false}
+                name={"config_data"}
+                required={false}
+                schemaName={"string[]"}
+                qualifierMessage={undefined}
+                schema={{"type":"array","items":{"type":"string"}}}
+              >
+                
+              </SchemaItem><SchemaItem
+                collapsible={false}
+                name={"isSelected"}
+                required={false}
+                schemaName={"integer"}
+                qualifierMessage={undefined}
+                schema={{"type":"integer"}}
+              >
+                
+              </SchemaItem><li>
+                <div
+                  style={{"fontSize":"var(--ifm-code-font-size)","opacity":"0.6","marginLeft":"-.5rem"}}
+                >
+                  ]
+                </div>
+              </li>
+            </div>
+          </details>
+        </SchemaItem><SchemaItem
+          collapsible={false}
+          name={"reportGroupId"}
+          required={false}
+          schemaName={"string"}
+          qualifierMessage={undefined}
+          schema={{"type":"string","default":"824"}}
+        >
+          
+        </SchemaItem>
+      </ul>
+    </details>
+  </TabItem>
+</MimeTabs><div>
+  <div>
+    <ApiTabs
+      label={undefined}
+      id={undefined}
+    >
+      <TabItem
+        label={"200"}
+        value={"200"}
+      >
+        <div>
+          
+          
+          Success
+          
+          
+        </div><div>
+          
+        </div>
+      </TabItem><TabItem
+        label={"201"}
+        value={"201"}
+      >
+        <div>
+          
+          
+          Invalid access Token
+          
+          
+        </div><div>
+          
+        </div>
+      </TabItem><TabItem
+        label={"405"}
+        value={"405"}
+      >
+        <div>
+          
+          
+          report_name is required, value is not allowed, report_name is not allowed to be empty, data is required, data[0].config_data is required, data[0]. is not allowed, data[0].short_code must be one of [CS, FS, SS, RS], data[0].short_code is not allowed to be empty, data[1].isSelected must be one of [1, 2], reportGroupId must be a number
+          
+          
+        </div><div>
+          
+        </div>
+      </TabItem><TabItem
+        label={"407"}
+        value={"407"}
+      >
+        <div>
+          
+          
+          Required parameters are missing
+          
+          
+        </div><div>
+          
+        </div>
+      </TabItem><TabItem
+        label={"429"}
+        value={"429"}
+      >
+        <div>
+          
+          
+          Record already exists
+          
+          
+        </div><div>
+          
+        </div>
+      </TabItem>
+    </ApiTabs>
+  </div>
+</div>
+      

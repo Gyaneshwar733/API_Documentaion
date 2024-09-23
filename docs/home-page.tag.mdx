@@ -1,0 +1,20 @@
+---
+id: home-page
+title: "Home Page"
+description: "Home Page"
+custom_edit_url: null
+---
+
+
+
+Signing in will immediately take you to your Home Page
+
+
+
+```mdx-code-block
+import DocCardList from '@theme/DocCardList';
+import {useCurrentSidebarCategory} from '@docusaurus/theme-common';
+
+<DocCardList items={useCurrentSidebarCategory().items}/>
+```
+      

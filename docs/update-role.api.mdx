@@ -1,0 +1,1414 @@
+---
+id: update-role
+title: "Update role"
+description: "Role Management"
+sidebar_label: "Update role"
+hide_title: true
+hide_table_of_contents: true
+api: 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
+sidebar_class_name: "post api-method"
+info_path: docs/seerportal-api
+custom_edit_url: null
+---
+
+import ApiTabs from "@theme/ApiTabs";
+import DiscriminatorTabs from "@theme/DiscriminatorTabs";
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import SecuritySchemes from "@theme/ApiExplorer/SecuritySchemes";
+import MimeTabs from "@theme/MimeTabs";
+import ParamsItem from "@theme/ParamsItem";
+import ResponseSamples from "@theme/ResponseSamples";
+import SchemaItem from "@theme/SchemaItem";
+import SchemaTabs from "@theme/SchemaTabs";
+import Heading from "@theme/Heading";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Update role"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"post"}
+  path={"/roleDetails/updateRole"}
+>
+  
+</MethodEndpoint>
+
+
+
+Role Management
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<details
+  style={{"marginBottom":"1rem"}}
+  className={"openapi-markdown__details"}
+  data-collapsed={false}
+  open={true}
+>
+  <summary
+    style={{}}
+  >
+    <h3
+      className={"openapi-markdown__details-summary-header-params"}
+    >
+      Header Parameters
+    </h3>
+  </summary><div>
+    <ul>
+      <ParamsItem
+        className={"paramsItem"}
+        param={{"name":"mode","in":"header","description":"mode in header","required":true,"schema":{"type":"string","default":"internal"}}}
+      >
+        
+      </ParamsItem>
+    </ul>
+  </div>
+</details><MimeTabs
+  className={"openapi-tabs__mime"}
+>
+  <TabItem
+    label={"application/json"}
+    value={"application/json-schema"}
+  >
+    <details
+      style={{}}
+      className={"openapi-markdown__details mime"}
+      data-collapsed={false}
+      open={true}
+    >
+      <summary
+        style={{}}
+        className={"openapi-markdown__details-summary-mime"}
+      >
+        <h3
+          className={"openapi-markdown__details-summary-header-body"}
+        >
+          Body
+        </h3><strong
+          className={"openapi-schema__required"}
+        >
+          required
+        </strong>
+      </summary><div
+        style={{"textAlign":"left","marginLeft":"1rem"}}
+      >
+        <div
+          style={{"marginTop":"1rem","marginBottom":"1rem"}}
+        >
+          
+          
+          **1.For "Permissions":** 
+          Add     
+          [0]   for NA   ,
+          [1]   for Read   , 
+          [2]   for Raad/write   ,   
+          [3] for Read/Write/Admin 
+          
+          **2.For "remaining fields" in the Model :**
+          Description:
+          If Yes then      [true] ,
+          If No then [false]
+          (**e.g.**  "view_sensitive" : false)
+          
+          **3.To get [name] , [  escalate_alerts_role_id ] , [escalate_cases_role_id] and [role_id]:**
+          --&gt;Execute the API endpoint ( Admin & Billing ): 
+          /roleDetails/roleList
+          (**e.g.** "id": 46,             "name": "Compliance Analyst") and
+          (**e.g.** "id": 1,                "name": "Global Admin")
+          
+          
+        </div>
+      </div><ul
+        style={{"marginLeft":"1rem"}}
+      >
+        <SchemaItem
+          collapsible={false}
+          name={"name"}
+          required={false}
+          schemaName={"string"}
+          qualifierMessage={undefined}
+          schema={{"type":"string","default":"21062122223"}}
+        >
+          
+        </SchemaItem><SchemaItem
+          collapsible={false}
+          name={"view_sensitive"}
+          required={false}
+          schemaName={"boolean"}
+          qualifierMessage={undefined}
+          schema={{"type":"boolean","default":false}}
+        >
+          
+        </SchemaItem><SchemaItem
+          collapsible={false}
+          name={"scrambled_on_screen"}
+          required={false}
+          schemaName={"boolean"}
+          qualifierMessage={undefined}
+          schema={{"type":"boolean","default":false}}
+        >
+          
+        </SchemaItem><SchemaItem
+          collapsible={false}
+          name={"download_scrambled"}
+          required={false}
+          schemaName={"boolean"}
+          qualifierMessage={undefined}
+          schema={{"type":"boolean","default":false}}
+        >
+          
+        </SchemaItem><SchemaItem
+          collapsible={false}
+          name={"encrypt_on_download"}
+          required={false}
+          schemaName={"boolean"}
+          qualifierMessage={undefined}
+          schema={{"type":"boolean","default":false}}
+        >
+          
+        </SchemaItem><SchemaItem
+          collapsible={true}
+          className={"schemaItem"}
+        >
+          <details
+            style={{}}
+            className={"openapi-markdown__details"}
+          >
+            <summary
+              style={{}}
+            >
+              <span
+                className={"openapi-schema__container"}
+              >
+                <strong
+                  className={"openapi-schema__property"}
+                >
+                  permissions
+                </strong><span
+                  className={"openapi-schema__name"}
+                >
+                   object
+                </span>
+              </span>
+            </summary><div
+              style={{"marginLeft":"1rem"}}
+            >
+              <SchemaItem
+                collapsible={false}
+                name={"home_page"}
+                required={false}
+                schemaName={"int64"}
+                qualifierMessage={undefined}
+                schema={{"type":"integer","format":"int64","default":3}}
+              >
+                
+              </SchemaItem><SchemaItem
+                collapsible={false}
+                name={"client_management"}
+                required={false}
+                schemaName={"integer"}
+                qualifierMessage={undefined}
+                schema={{"type":"integer","description":"0-NA,1-Read, 2 for Read/write and 3 for global admin"}}
+              >
+                
+              </SchemaItem><SchemaItem
+                collapsible={false}
+                name={"user_management"}
+                required={false}
+                schemaName={"integer"}
+                qualifierMessage={undefined}
+                schema={{"type":"integer"}}
+              >
+                
+              </SchemaItem><SchemaItem
+                collapsible={false}
+                name={"role_management"}
+                required={false}
+                schemaName={"integer"}
+                qualifierMessage={undefined}
+                schema={{"type":"integer"}}
+              >
+                
+              </SchemaItem><SchemaItem
+                collapsible={false}
+                name={"program_groups"}
+                required={false}
+                schemaName={"integer"}
+                qualifierMessage={undefined}
+                schema={{"type":"integer"}}
+              >
+                
+              </SchemaItem><SchemaItem
+                collapsible={false}
+                name={"report_groups"}
+                required={false}
+                schemaName={"integer"}
+                qualifierMessage={undefined}
+                schema={{"type":"integer"}}
+              >
+                
+              </SchemaItem><SchemaItem
+                collapsible={false}
+                name={"cluster_management"}
+                required={false}
+                schemaName={"integer"}
+                qualifierMessage={undefined}
+                schema={{"type":"integer"}}
+              >
+                
+              </SchemaItem><SchemaItem
+                collapsible={false}
+                name={"workunit_tracker"}
+                required={false}
+                schemaName={"integer"}
+                qualifierMessage={undefined}
+                schema={{"type":"integer"}}
+              >
+                
+              </SchemaItem><SchemaItem
+                collapsible={false}
+                name={"manage_api_keys"}
+                required={false}
+                schemaName={"integer"}
+                qualifierMessage={undefined}
+                schema={{"type":"integer"}}
+              >
+                
+              </SchemaItem><SchemaItem
+                collapsible={false}
+                name={"cron_settings"}
+                required={false}
+                schemaName={"integer"}
+                qualifierMessage={undefined}
+                schema={{"type":"integer"}}
+              >
+                
+              </SchemaItem><SchemaItem
+                collapsible={false}
+                name={"audit_logs"}
+                required={false}
+                schemaName={"integer"}
+                qualifierMessage={undefined}
+                schema={{"type":"integer"}}
+              >
+                
+              </SchemaItem><SchemaItem
+                collapsible={false}
+                name={"invoices"}
+                required={false}
+                schemaName={"integer"}
+                qualifierMessage={undefined}
+                schema={{"type":"integer"}}
+              >
+                
+              </SchemaItem><SchemaItem
+                collapsible={false}
+                name={"email_tracker"}
+                required={false}
+                schemaName={"int32"}
+                qualifierMessage={undefined}
+                schema={{"type":"integer","format":"int32","default":0}}
+              >
+                
+              </SchemaItem><SchemaItem
+                collapsible={false}
+                name={"seer_webhook"}
+                required={false}
+                schemaName={"int32"}
+                qualifierMessage={undefined}
+                schema={{"type":"integer","format":"int32","default":0}}
+              >
+                
+              </SchemaItem><SchemaItem
+                collapsible={false}
+                name={"download_center"}
+                required={false}
+                schemaName={"int32"}
+                qualifierMessage={undefined}
+                schema={{"type":"integer","format":"int32","default":0}}
+              >
+                
+              </SchemaItem><SchemaItem
+                collapsible={false}
+                name={"processors"}
+                required={false}
+                schemaName={"integer"}
+                qualifierMessage={undefined}
+                schema={{"type":"integer"}}
+              >
+                
+              </SchemaItem><SchemaItem
+                collapsible={false}
+                name={"data_admin"}
+                required={false}
+                schemaName={"integer"}
+                qualifierMessage={undefined}
+                schema={{"type":"integer"}}
+              >
+                
+              </SchemaItem><SchemaItem
+                collapsible={false}
+                name={"program_matrix"}
+                required={false}
+                schemaName={"integer"}
+                qualifierMessage={undefined}
+                schema={{"type":"integer"}}
+              >
+                
+              </SchemaItem><SchemaItem
+                collapsible={false}
+                name={"ach_configuration"}
+                required={false}
+                schemaName={"integer"}
+                qualifierMessage={undefined}
+                schema={{"type":"integer"}}
+              >
+                
+              </SchemaItem><SchemaItem
+                collapsible={false}
+                name={"bai2_configuration"}
+                required={false}
+                schemaName={"integer"}
+                qualifierMessage={undefined}
+                schema={{"type":"integer"}}
+              >
+                
+              </SchemaItem><SchemaItem
+                collapsible={false}
+                name={"merchant_management"}
+                required={false}
+                schemaName={"integer"}
+                qualifierMessage={undefined}
+                schema={{"type":"integer"}}
+              >
+                
+              </SchemaItem><SchemaItem
+                collapsible={false}
+                name={"ds_code_master"}
+                required={false}
+                schemaName={"integer"}
+                qualifierMessage={undefined}
+                schema={{"type":"integer"}}
+              >
+                
+              </SchemaItem><SchemaItem
+                collapsible={false}
+                name={"hidta_hifca"}
+                required={false}
+                schemaName={"integer"}
+                qualifierMessage={undefined}
+                schema={{"type":"integer"}}
+              >
+                
+              </SchemaItem><SchemaItem
+                collapsible={false}
+                name={"ofac_history"}
+                required={false}
+                schemaName={"integer"}
+                qualifierMessage={undefined}
+                schema={{"type":"integer"}}
+              >
+                
+              </SchemaItem><SchemaItem
+                collapsible={false}
+                name={"us_denied_persons"}
+                required={false}
+                schemaName={"integer"}
+                qualifierMessage={undefined}
+                schema={{"type":"integer"}}
+              >
+                
+              </SchemaItem><SchemaItem
+                collapsible={false}
+                name={"un_sanction"}
+                required={false}
+                schemaName={"integer"}
+                qualifierMessage={undefined}
+                schema={{"type":"integer"}}
+              >
+                
+              </SchemaItem><SchemaItem
+                collapsible={false}
+                name={"pep_cia_world_leaders"}
+                required={false}
+                schemaName={"integer"}
+                qualifierMessage={undefined}
+                schema={{"type":"integer"}}
+              >
+                
+              </SchemaItem><SchemaItem
+                collapsible={false}
+                name={"pep_politician"}
+                required={false}
+                schemaName={"integer"}
+                qualifierMessage={undefined}
+                schema={{"type":"integer"}}
+              >
+                
+              </SchemaItem><SchemaItem
+                collapsible={false}
+                name={"pep_eu_members_of_parliament"}
+                required={false}
+                schemaName={"integer"}
+                qualifierMessage={undefined}
+                schema={{"type":"integer"}}
+              >
+                
+              </SchemaItem><SchemaItem
+                collapsible={false}
+                name={"account"}
+                required={false}
+                schemaName={"integer"}
+                qualifierMessage={undefined}
+                schema={{"type":"integer"}}
+              >
+                
+              </SchemaItem><SchemaItem
+                collapsible={false}
+                name={"account_holder"}
+                required={false}
+                schemaName={"integer"}
+                qualifierMessage={undefined}
+                schema={{"type":"integer"}}
+              >
+                
+              </SchemaItem><SchemaItem
+                collapsible={false}
+                name={"merchant"}
+                required={false}
+                schemaName={"integer"}
+                qualifierMessage={undefined}
+                schema={{"type":"integer"}}
+              >
+                
+              </SchemaItem><SchemaItem
+                collapsible={false}
+                name={"reason_codes"}
+                required={false}
+                schemaName={"integer"}
+                qualifierMessage={undefined}
+                schema={{"type":"integer"}}
+              >
+                
+              </SchemaItem><SchemaItem
+                collapsible={false}
+                name={"reports_management"}
+                required={false}
+                schemaName={"integer"}
+                qualifierMessage={undefined}
+                schema={{"type":"integer"}}
+              >
+                
+              </SchemaItem><SchemaItem
+                collapsible={false}
+                name={"view_reports"}
+                required={false}
+                schemaName={"integer"}
+                qualifierMessage={undefined}
+                schema={{"type":"integer"}}
+              >
+                
+              </SchemaItem><SchemaItem
+                collapsible={false}
+                name={"bulk_extract"}
+                required={false}
+                schemaName={"integer"}
+                qualifierMessage={undefined}
+                schema={{"type":"integer"}}
+              >
+                
+              </SchemaItem><SchemaItem
+                collapsible={false}
+                name={"file_tracker"}
+                required={false}
+                schemaName={"integer"}
+                qualifierMessage={undefined}
+                schema={{"type":"integer"}}
+              >
+                
+              </SchemaItem><SchemaItem
+                collapsible={false}
+                name={"rm_account"}
+                required={false}
+                schemaName={"integer"}
+                qualifierMessage={undefined}
+                schema={{"type":"integer"}}
+              >
+                
+              </SchemaItem><SchemaItem
+                collapsible={false}
+                name={"address"}
+                required={false}
+                schemaName={"integer"}
+                qualifierMessage={undefined}
+                schema={{"type":"integer"}}
+              >
+                
+              </SchemaItem><SchemaItem
+                collapsible={false}
+                name={"rm_account_holder"}
+                required={false}
+                schemaName={"integer"}
+                qualifierMessage={undefined}
+                schema={{"type":"integer"}}
+              >
+                
+              </SchemaItem><SchemaItem
+                collapsible={false}
+                name={"card"}
+                required={false}
+                schemaName={"integer"}
+                qualifierMessage={undefined}
+                schema={{"type":"integer"}}
+              >
+                
+              </SchemaItem><SchemaItem
+                collapsible={false}
+                name={"transaction"}
+                required={false}
+                schemaName={"integer"}
+                qualifierMessage={undefined}
+                schema={{"type":"integer"}}
+              >
+                
+              </SchemaItem><SchemaItem
+                collapsible={false}
+                name={"identity_seer_overview"}
+                required={false}
+                schemaName={"int32"}
+                qualifierMessage={undefined}
+                schema={{"type":"integer","format":"int32","default":0}}
+              >
+                
+              </SchemaItem><SchemaItem
+                collapsible={false}
+                name={"flow_config"}
+                required={false}
+                schemaName={"integer"}
+                qualifierMessage={undefined}
+                schema={{"type":"integer"}}
+              >
+                
+              </SchemaItem><SchemaItem
+                collapsible={false}
+                name={"risk_indicators"}
+                required={false}
+                schemaName={"integer"}
+                qualifierMessage={undefined}
+                schema={{"type":"integer"}}
+              >
+                
+              </SchemaItem><SchemaItem
+                collapsible={false}
+                name={"kyc_seer_id"}
+                required={false}
+                schemaName={"integer"}
+                qualifierMessage={undefined}
+                schema={{"type":"integer"}}
+              >
+                
+              </SchemaItem><SchemaItem
+                collapsible={false}
+                name={"kyb_validator"}
+                required={false}
+                schemaName={"integer"}
+                qualifierMessage={undefined}
+                schema={{"type":"integer"}}
+              >
+                
+              </SchemaItem><SchemaItem
+                collapsible={false}
+                name={"seer_id_bi"}
+                required={false}
+                schemaName={"integer"}
+                qualifierMessage={undefined}
+                schema={{"type":"integer"}}
+              >
+                
+              </SchemaItem><SchemaItem
+                collapsible={false}
+                name={"kyc_seer_iq"}
+                required={false}
+                schemaName={"integer"}
+                qualifierMessage={undefined}
+                schema={{"type":"integer"}}
+              >
+                
+              </SchemaItem><SchemaItem
+                collapsible={false}
+                name={"kyc_seer_scan"}
+                required={false}
+                schemaName={"integer"}
+                qualifierMessage={undefined}
+                schema={{"type":"integer"}}
+              >
+                
+              </SchemaItem><SchemaItem
+                collapsible={false}
+                name={"kyc_seer_360"}
+                required={false}
+                schemaName={"integer"}
+                qualifierMessage={undefined}
+                schema={{"type":"integer"}}
+              >
+                
+              </SchemaItem><SchemaItem
+                collapsible={false}
+                name={"kyc_seer_wlspm"}
+                required={false}
+                schemaName={"integer"}
+                qualifierMessage={undefined}
+                schema={{"type":"integer"}}
+              >
+                
+              </SchemaItem><SchemaItem
+                collapsible={false}
+                name={"identity_seer_seer_ip"}
+                required={false}
+                schemaName={"integer"}
+                qualifierMessage={undefined}
+                schema={{"type":"integer"}}
+              >
+                
+              </SchemaItem><SchemaItem
+                collapsible={false}
+                name={"kyc_seer_phone"}
+                required={false}
+                schemaName={"integer"}
+                qualifierMessage={undefined}
+                schema={{"type":"integer"}}
+              >
+                
+              </SchemaItem><SchemaItem
+                collapsible={false}
+                name={"identity_seer_seer_web"}
+                required={false}
+                schemaName={"int32"}
+                qualifierMessage={undefined}
+                schema={{"type":"integer","format":"int32","default":0}}
+              >
+                
+              </SchemaItem><SchemaItem
+                collapsible={false}
+                name={"kyc_seer_email"}
+                required={false}
+                schemaName={"int32"}
+                qualifierMessage={undefined}
+                schema={{"type":"integer","format":"int32","default":0}}
+              >
+                
+              </SchemaItem><SchemaItem
+                collapsible={false}
+                name={"cdd_edd_customer"}
+                required={false}
+                schemaName={"int32"}
+                qualifierMessage={undefined}
+                schema={{"type":"integer","format":"int32","default":0}}
+              >
+                
+              </SchemaItem><SchemaItem
+                collapsible={false}
+                name={"cdd_edd_business"}
+                required={false}
+                schemaName={"integer"}
+                qualifierMessage={undefined}
+                schema={{"type":"integer"}}
+              >
+                
+              </SchemaItem><SchemaItem
+                collapsible={false}
+                name={"recon_seer_overview"}
+                required={false}
+                schemaName={"integer"}
+                qualifierMessage={undefined}
+                schema={{"type":"integer"}}
+              >
+                
+              </SchemaItem><SchemaItem
+                collapsible={false}
+                name={"money_flow"}
+                required={false}
+                schemaName={"integer"}
+                qualifierMessage={undefined}
+                schema={{"type":"integer"}}
+              >
+                
+              </SchemaItem><SchemaItem
+                collapsible={false}
+                name={"rs_alerts"}
+                required={false}
+                schemaName={"integer"}
+                qualifierMessage={undefined}
+                schema={{"type":"integer"}}
+              >
+                
+              </SchemaItem><SchemaItem
+                collapsible={false}
+                name={"recon_roll_forward"}
+                required={false}
+                schemaName={"integer"}
+                qualifierMessage={undefined}
+                schema={{"type":"integer"}}
+              >
+                
+              </SchemaItem><SchemaItem
+                collapsible={false}
+                name={"recon_network_settlement"}
+                required={false}
+                schemaName={"int32"}
+                qualifierMessage={undefined}
+                schema={{"type":"integer","format":"int32","default":0}}
+              >
+                
+              </SchemaItem><SchemaItem
+                collapsible={false}
+                name={"compliance_seer_overview"}
+                required={false}
+                schemaName={"integer"}
+                qualifierMessage={undefined}
+                schema={{"type":"integer"}}
+              >
+                
+              </SchemaItem><SchemaItem
+                collapsible={false}
+                name={"alerts"}
+                required={false}
+                schemaName={"integer"}
+                qualifierMessage={undefined}
+                schema={{"type":"integer"}}
+              >
+                
+              </SchemaItem><SchemaItem
+                collapsible={false}
+                name={"cases"}
+                required={false}
+                schemaName={"integer"}
+                qualifierMessage={undefined}
+                schema={{"type":"integer"}}
+              >
+                
+              </SchemaItem><SchemaItem
+                collapsible={false}
+                name={"Sar_filing"}
+                required={false}
+                schemaName={"integer"}
+                qualifierMessage={undefined}
+                schema={{"type":"integer"}}
+              >
+                
+              </SchemaItem><SchemaItem
+                collapsible={false}
+                name={"ctr_filing"}
+                required={false}
+                schemaName={"integer"}
+                qualifierMessage={undefined}
+                schema={{"type":"integer"}}
+              >
+                
+              </SchemaItem><SchemaItem
+                collapsible={false}
+                name={"314(a)_management"}
+                required={false}
+                schemaName={"integer"}
+                qualifierMessage={undefined}
+                schema={{"type":"integer"}}
+              >
+                
+              </SchemaItem><SchemaItem
+                collapsible={false}
+                name={"314(b)_management"}
+                required={false}
+                schemaName={"integer"}
+                qualifierMessage={undefined}
+                schema={{"type":"integer"}}
+              >
+                
+              </SchemaItem><SchemaItem
+                collapsible={false}
+                name={"reg-e_monitoring"}
+                required={false}
+                schemaName={"integer"}
+                qualifierMessage={undefined}
+                schema={{"type":"integer"}}
+              >
+                
+              </SchemaItem><SchemaItem
+                collapsible={false}
+                name={"fraud_seer_overview"}
+                required={false}
+                schemaName={"integer"}
+                qualifierMessage={undefined}
+                schema={{"type":"integer"}}
+              >
+                
+              </SchemaItem><SchemaItem
+                collapsible={false}
+                name={"fs_alerts"}
+                required={false}
+                schemaName={"integer"}
+                qualifierMessage={undefined}
+                schema={{"type":"integer"}}
+              >
+                
+              </SchemaItem><SchemaItem
+                collapsible={false}
+                name={"strata_seer_overview"}
+                required={false}
+                schemaName={"integer"}
+                qualifierMessage={undefined}
+                schema={{"type":"integer"}}
+              >
+                
+              </SchemaItem><SchemaItem
+                collapsible={false}
+                name={"dashboard_page"}
+                required={false}
+                schemaName={"integer"}
+                qualifierMessage={undefined}
+                schema={{"type":"integer"}}
+              >
+                
+              </SchemaItem><SchemaItem
+                collapsible={false}
+                name={"ss_alerts"}
+                required={false}
+                schemaName={"integer"}
+                qualifierMessage={undefined}
+                schema={{"type":"integer"}}
+              >
+                
+              </SchemaItem><SchemaItem
+                collapsible={false}
+                name={"customer_profile"}
+                required={false}
+                schemaName={"integer"}
+                qualifierMessage={undefined}
+                schema={{"type":"integer"}}
+              >
+                
+              </SchemaItem>
+            </div>
+          </details>
+        </SchemaItem><SchemaItem
+          collapsible={false}
+          name={"hide_empty_reports"}
+          required={false}
+          schemaName={"boolean"}
+          qualifierMessage={undefined}
+          schema={{"type":"boolean","default":false}}
+        >
+          
+        </SchemaItem><SchemaItem
+          collapsible={false}
+          name={"hide_report_size"}
+          required={false}
+          schemaName={"boolean"}
+          qualifierMessage={undefined}
+          schema={{"type":"boolean","default":false}}
+        >
+          
+        </SchemaItem><SchemaItem
+          collapsible={false}
+          name={"hide_total_record"}
+          required={false}
+          schemaName={"boolean"}
+          qualifierMessage={undefined}
+          schema={{"type":"boolean","default":false}}
+        >
+          
+        </SchemaItem><SchemaItem
+          collapsible={false}
+          name={"hide_kyc_raw_data"}
+          required={false}
+          schemaName={"boolean"}
+          qualifierMessage={undefined}
+          schema={{"type":"boolean","default":false}}
+        >
+          
+        </SchemaItem><SchemaItem
+          collapsible={false}
+          name={"hide_kyc_failure_reasons"}
+          required={false}
+          schemaName={"boolean"}
+          qualifierMessage={undefined}
+          schema={{"type":"boolean","default":false}}
+        >
+          
+        </SchemaItem><SchemaItem
+          collapsible={false}
+          name={"hide_kyc_external_response"}
+          required={false}
+          schemaName={"boolean"}
+          qualifierMessage={undefined}
+          schema={{"type":"boolean","default":false}}
+        >
+          
+        </SchemaItem><SchemaItem
+          collapsible={false}
+          name={"hide_kyb_raw_data"}
+          required={false}
+          schemaName={"boolean"}
+          qualifierMessage={undefined}
+          schema={{"type":"boolean","default":false}}
+        >
+          
+        </SchemaItem><SchemaItem
+          collapsible={false}
+          name={"hide_kyb_failure_reasons"}
+          required={false}
+          schemaName={"boolean"}
+          qualifierMessage={undefined}
+          schema={{"type":"boolean","default":false}}
+        >
+          
+        </SchemaItem><SchemaItem
+          collapsible={false}
+          name={"hide_kyb_external_response"}
+          required={false}
+          schemaName={"boolean"}
+          qualifierMessage={undefined}
+          schema={{"type":"boolean","default":false}}
+        >
+          
+        </SchemaItem><SchemaItem
+          collapsible={false}
+          name={"hide_seeridbi_raw_data"}
+          required={false}
+          schemaName={"boolean"}
+          qualifierMessage={undefined}
+          schema={{"type":"boolean","default":false}}
+        >
+          
+        </SchemaItem><SchemaItem
+          collapsible={false}
+          name={"hide_seeridbi_failure_reasons"}
+          required={false}
+          schemaName={"boolean"}
+          qualifierMessage={undefined}
+          schema={{"type":"boolean","default":false}}
+        >
+          
+        </SchemaItem><SchemaItem
+          collapsible={false}
+          name={"hide_seeridbi_external_response"}
+          required={false}
+          schemaName={"boolean"}
+          qualifierMessage={undefined}
+          schema={{"type":"boolean","default":false}}
+        >
+          
+        </SchemaItem><SchemaItem
+          collapsible={false}
+          name={"hide_seeriq_raw_data"}
+          required={false}
+          schemaName={"boolean"}
+          qualifierMessage={undefined}
+          schema={{"type":"boolean","default":false}}
+        >
+          
+        </SchemaItem><SchemaItem
+          collapsible={false}
+          name={"hide_seeriq_failure_reasons"}
+          required={false}
+          schemaName={"boolean"}
+          qualifierMessage={undefined}
+          schema={{"type":"boolean","default":false}}
+        >
+          
+        </SchemaItem><SchemaItem
+          collapsible={false}
+          name={"hide_seeriq_external_response"}
+          required={false}
+          schemaName={"boolean"}
+          qualifierMessage={undefined}
+          schema={{"type":"boolean","default":false}}
+        >
+          
+        </SchemaItem><SchemaItem
+          collapsible={false}
+          name={"hide_seerscan_raw_data"}
+          required={false}
+          schemaName={"boolean"}
+          qualifierMessage={undefined}
+          schema={{"type":"boolean","default":false}}
+        >
+          
+        </SchemaItem><SchemaItem
+          collapsible={false}
+          name={"hide_seerscan_failure_reasons"}
+          required={false}
+          schemaName={"boolean"}
+          qualifierMessage={undefined}
+          schema={{"type":"boolean","default":false}}
+        >
+          
+        </SchemaItem><SchemaItem
+          collapsible={false}
+          name={"hide_seerscan_external_response"}
+          required={false}
+          schemaName={"boolean"}
+          qualifierMessage={undefined}
+          schema={{"type":"boolean","default":false}}
+        >
+          
+        </SchemaItem><SchemaItem
+          collapsible={false}
+          name={"hide_seer360_raw_data"}
+          required={false}
+          schemaName={"boolean"}
+          qualifierMessage={undefined}
+          schema={{"type":"boolean","default":false}}
+        >
+          
+        </SchemaItem><SchemaItem
+          collapsible={false}
+          name={"hide_seer360_failure_reasons"}
+          required={false}
+          schemaName={"boolean"}
+          qualifierMessage={undefined}
+          schema={{"type":"boolean","default":false}}
+        >
+          
+        </SchemaItem><SchemaItem
+          collapsible={false}
+          name={"hide_seer360_external_response"}
+          required={false}
+          schemaName={"boolean"}
+          qualifierMessage={undefined}
+          schema={{"type":"boolean","default":false}}
+        >
+          
+        </SchemaItem><SchemaItem
+          collapsible={false}
+          name={"hide_seerwlspm_raw_data"}
+          required={false}
+          schemaName={"boolean"}
+          qualifierMessage={undefined}
+          schema={{"type":"boolean","default":false}}
+        >
+          
+        </SchemaItem><SchemaItem
+          collapsible={false}
+          name={"hide_seerwlspm_failure_reasons"}
+          required={false}
+          schemaName={"boolean"}
+          qualifierMessage={undefined}
+          schema={{"type":"boolean","default":false}}
+        >
+          
+        </SchemaItem><SchemaItem
+          collapsible={false}
+          name={"hide_seerwlspm_external_response"}
+          required={false}
+          schemaName={"boolean"}
+          qualifierMessage={undefined}
+          schema={{"type":"boolean","default":false}}
+        >
+          
+        </SchemaItem><SchemaItem
+          collapsible={false}
+          name={"hide_seerip_raw_data"}
+          required={false}
+          schemaName={"boolean"}
+          qualifierMessage={undefined}
+          schema={{"type":"boolean","default":false}}
+        >
+          
+        </SchemaItem><SchemaItem
+          collapsible={false}
+          name={"hide_seerip_failure_reasons"}
+          required={false}
+          schemaName={"boolean"}
+          qualifierMessage={undefined}
+          schema={{"type":"boolean","default":false}}
+        >
+          
+        </SchemaItem><SchemaItem
+          collapsible={false}
+          name={"hide_seerip_external_response"}
+          required={false}
+          schemaName={"boolean"}
+          qualifierMessage={undefined}
+          schema={{"type":"boolean","default":false}}
+        >
+          
+        </SchemaItem><SchemaItem
+          collapsible={false}
+          name={"hide_seerphone_raw_data"}
+          required={false}
+          schemaName={"boolean"}
+          qualifierMessage={undefined}
+          schema={{"type":"boolean","default":false}}
+        >
+          
+        </SchemaItem><SchemaItem
+          collapsible={false}
+          name={"hide_seerphone_failure_reasons"}
+          required={false}
+          schemaName={"boolean"}
+          qualifierMessage={undefined}
+          schema={{"type":"boolean","default":false}}
+        >
+          
+        </SchemaItem><SchemaItem
+          collapsible={false}
+          name={"hide_seerphone_external_response"}
+          required={false}
+          schemaName={"boolean"}
+          qualifierMessage={undefined}
+          schema={{"type":"boolean","default":false}}
+        >
+          
+        </SchemaItem><SchemaItem
+          collapsible={false}
+          name={"hide_seerweb_raw_data"}
+          required={false}
+          schemaName={"boolean"}
+          qualifierMessage={undefined}
+          schema={{"type":"boolean","default":false}}
+        >
+          
+        </SchemaItem><SchemaItem
+          collapsible={false}
+          name={"hide_seerweb_failure_reasons"}
+          required={false}
+          schemaName={"boolean"}
+          qualifierMessage={undefined}
+          schema={{"type":"boolean","default":false}}
+        >
+          
+        </SchemaItem><SchemaItem
+          collapsible={false}
+          name={"hide_seerweb_external_response"}
+          required={false}
+          schemaName={"boolean"}
+          qualifierMessage={undefined}
+          schema={{"type":"boolean","default":false}}
+        >
+          
+        </SchemaItem><SchemaItem
+          collapsible={false}
+          name={"hide_seeremail_raw_data"}
+          required={false}
+          schemaName={"boolean"}
+          qualifierMessage={undefined}
+          schema={{"type":"boolean","default":false}}
+        >
+          
+        </SchemaItem><SchemaItem
+          collapsible={false}
+          name={"hide_seeremail_failure_reasons"}
+          required={false}
+          schemaName={"boolean"}
+          qualifierMessage={undefined}
+          schema={{"type":"boolean","default":false}}
+        >
+          
+        </SchemaItem><SchemaItem
+          collapsible={false}
+          name={"hide_seeremail_external_response"}
+          required={false}
+          schemaName={"boolean"}
+          qualifierMessage={undefined}
+          schema={{"type":"boolean","default":false}}
+        >
+          
+        </SchemaItem><SchemaItem
+          collapsible={false}
+          name={"hide_diligenceC_raw_data"}
+          required={false}
+          schemaName={"boolean"}
+          qualifierMessage={undefined}
+          schema={{"type":"boolean","default":false}}
+        >
+          
+        </SchemaItem><SchemaItem
+          collapsible={false}
+          name={"hide_diligenceC_failure_reasons"}
+          required={false}
+          schemaName={"boolean"}
+          qualifierMessage={undefined}
+          schema={{"type":"boolean","default":false}}
+        >
+          
+        </SchemaItem><SchemaItem
+          collapsible={false}
+          name={"hide_diligenceC_external_response"}
+          required={false}
+          schemaName={"boolean"}
+          qualifierMessage={undefined}
+          schema={{"type":"boolean","default":false}}
+        >
+          
+        </SchemaItem><SchemaItem
+          collapsible={false}
+          name={"hide_diligenceB_raw_data"}
+          required={false}
+          schemaName={"boolean"}
+          qualifierMessage={undefined}
+          schema={{"type":"boolean","default":false}}
+        >
+          
+        </SchemaItem><SchemaItem
+          collapsible={false}
+          name={"hide_diligenceB_failure_reasons"}
+          required={false}
+          schemaName={"boolean"}
+          qualifierMessage={undefined}
+          schema={{"type":"boolean","default":false}}
+        >
+          
+        </SchemaItem><SchemaItem
+          collapsible={false}
+          name={"hide_diligenceB_external_response"}
+          required={false}
+          schemaName={"boolean"}
+          qualifierMessage={undefined}
+          schema={{"type":"boolean","default":false}}
+        >
+          
+        </SchemaItem><SchemaItem
+          collapsible={false}
+          name={"escalate_alerts_role_id"}
+          required={false}
+          schemaName={"int64"}
+          qualifierMessage={undefined}
+          schema={{"type":"integer","format":"int64","default":24}}
+        >
+          
+        </SchemaItem><SchemaItem
+          collapsible={false}
+          name={"escalate_cases_role_id"}
+          required={false}
+          schemaName={"int64"}
+          qualifierMessage={undefined}
+          schema={{"type":"integer","format":"int64","default":24}}
+        >
+          
+        </SchemaItem><SchemaItem
+          collapsible={false}
+          name={"sar_submitter"}
+          required={false}
+          schemaName={"boolean"}
+          qualifierMessage={undefined}
+          schema={{"type":"boolean","default":true}}
+        >
+          
+        </SchemaItem><SchemaItem
+          collapsible={false}
+          name={"ctr_submitter"}
+          required={false}
+          schemaName={"boolean"}
+          qualifierMessage={undefined}
+          schema={{"type":"boolean","default":true}}
+        >
+          
+        </SchemaItem><SchemaItem
+          collapsible={false}
+          name={"role_id"}
+          required={false}
+          schemaName={"int64"}
+          qualifierMessage={undefined}
+          schema={{"type":"integer","format":"int64","default":1699}}
+        >
+          
+        </SchemaItem><SchemaItem
+          collapsible={false}
+          name={"can_rw_cases"}
+          required={false}
+          schemaName={"integer"}
+          qualifierMessage={undefined}
+          schema={{"type":"integer"}}
+        >
+          
+        </SchemaItem>
+      </ul>
+    </details>
+  </TabItem>
+</MimeTabs><div>
+  <div>
+    <ApiTabs
+      label={undefined}
+      id={undefined}
+    >
+      <TabItem
+        label={"200"}
+        value={"200"}
+      >
+        <div>
+          
+          
+          Success, Record has been updated successfully
+          
+          
+        </div><div>
+          
+        </div>
+      </TabItem><TabItem
+        label={"201"}
+        value={"201"}
+      >
+        <div>
+          
+          
+          Invalid Access Token
+          
+          
+        </div><div>
+          
+        </div>
+      </TabItem><TabItem
+        label={"405"}
+        value={"405"}
+      >
+        <div>
+          
+          
+          name is required, is not allowed, name is not allowed be empty
+          
+          
+        </div><div>
+          
+        </div>
+      </TabItem><TabItem
+        label={"437"}
+        value={"437"}
+      >
+        <div>
+          
+          
+          Role name already exists. Please use a different role name
+          
+          
+        </div><div>
+          
+        </div>
+      </TabItem><TabItem
+        label={"500"}
+        value={"500"}
+      >
+        <div>
+          
+          
+          Something went wrong please contact the system administrator
+          
+          
+        </div><div>
+          
+        </div>
+      </TabItem>
+    </ApiTabs>
+  </div>
+</div>
+      

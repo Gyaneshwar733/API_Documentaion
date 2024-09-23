@@ -1,0 +1,317 @@
+---
+id: user-upload
+title: "User upload"
+description: "The API allow uploading of user's data via an Excel file. The user details, including their personal information, role, and program/report group, are provided in the Excel file, which is processed to add multiple users at once."
+sidebar_label: "User upload"
+hide_title: true
+hide_table_of_contents: true
+api: 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
+sidebar_class_name: "post api-method"
+info_path: docs/seerportal-api
+custom_edit_url: null
+---
+
+import ApiTabs from "@theme/ApiTabs";
+import DiscriminatorTabs from "@theme/DiscriminatorTabs";
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import SecuritySchemes from "@theme/ApiExplorer/SecuritySchemes";
+import MimeTabs from "@theme/MimeTabs";
+import ParamsItem from "@theme/ParamsItem";
+import ResponseSamples from "@theme/ResponseSamples";
+import SchemaItem from "@theme/SchemaItem";
+import SchemaTabs from "@theme/SchemaTabs";
+import Heading from "@theme/Heading";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"User upload"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"post"}
+  path={"/userDetails/bulk-upload"}
+>
+  
+</MethodEndpoint>
+
+
+
+The API allow uploading of user's data via an Excel file. The user details, including their personal information, role, and program/report group, are provided in the Excel file, which is processed to add multiple users at once.
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<MimeTabs
+  className={"openapi-tabs__mime"}
+>
+  <TabItem
+    label={"application/json"}
+    value={"application/json-schema"}
+  >
+    <details
+      style={{}}
+      className={"openapi-markdown__details mime"}
+      data-collapsed={false}
+      open={true}
+    >
+      <summary
+        style={{}}
+        className={"openapi-markdown__details-summary-mime"}
+      >
+        <h3
+          className={"openapi-markdown__details-summary-header-body"}
+        >
+          Body
+        </h3><strong
+          className={"openapi-schema__required"}
+        >
+          required
+        </strong>
+      </summary><div
+        style={{"textAlign":"left","marginLeft":"1rem"}}
+      >
+        
+      </div><ul
+        style={{"marginLeft":"1rem"}}
+      >
+        <SchemaItem
+          collapsible={true}
+          className={"schemaItem"}
+        >
+          <details
+            style={{}}
+            className={"openapi-markdown__details"}
+          >
+            <summary
+              style={{}}
+            >
+              <span
+                className={"openapi-schema__container"}
+              >
+                <strong
+                  className={"openapi-schema__property"}
+                >
+                  fileData
+                </strong><span
+                  className={"openapi-schema__name"}
+                >
+                   object
+                </span>
+              </span>
+            </summary><div
+              style={{"marginLeft":"1rem"}}
+            >
+              <div
+                style={{"marginTop":".5rem","marginBottom":".5rem"}}
+              >
+                
+                
+                The fileData includes information about a file and its contents. It contains the following:
+                
+                
+              </div><SchemaItem
+                collapsible={true}
+                className={"schemaItem"}
+              >
+                <details
+                  style={{}}
+                  className={"openapi-markdown__details"}
+                >
+                  <summary
+                    style={{}}
+                  >
+                    <span
+                      className={"openapi-schema__container"}
+                    >
+                      <strong
+                        className={"openapi-schema__property"}
+                      >
+                        user_data
+                      </strong><span
+                        className={"openapi-schema__name"}
+                      >
+                         object[]
+                      </span>
+                    </span>
+                  </summary><div
+                    style={{"marginLeft":"1rem"}}
+                  >
+                    <div
+                      style={{"marginTop":".5rem","marginBottom":".5rem"}}
+                    >
+                      
+                      
+                      The list of users to be added. Each user contains:
+                      
+                      
+                    </div><li>
+                      <div
+                        style={{"fontSize":"var(--ifm-code-font-size)","opacity":"0.6","marginLeft":"-.5rem","paddingBottom":".5rem"}}
+                      >
+                        Array [
+                      </div>
+                    </li><SchemaItem
+                      collapsible={false}
+                      name={"first_name"}
+                      required={false}
+                      schemaName={"string"}
+                      qualifierMessage={undefined}
+                      schema={{"type":"string","default":"dataseers","description":"The first name of the user. eg: **dataseers**"}}
+                    >
+                      
+                    </SchemaItem><SchemaItem
+                      collapsible={false}
+                      name={"last_name"}
+                      required={false}
+                      schemaName={"string"}
+                      qualifierMessage={undefined}
+                      schema={{"type":"string","default":"ai","description":"The last name of the user. eg: **ai**"}}
+                    >
+                      
+                    </SchemaItem><SchemaItem
+                      collapsible={false}
+                      name={"email"}
+                      required={false}
+                      schemaName={"string"}
+                      qualifierMessage={undefined}
+                      schema={{"type":"string","default":"angel@dataseers.in","description":"The email address of the user. This should be unique in the system. eg: **angel@dataseers.in\"**"}}
+                    >
+                      
+                    </SchemaItem><SchemaItem
+                      collapsible={false}
+                      name={"phone_code"}
+                      required={false}
+                      schemaName={"string"}
+                      qualifierMessage={undefined}
+                      schema={{"type":"string","default":"1-Canada","description":"The phone code for the user's contact number, typically includes the country code. eg: **1-Canada**"}}
+                    >
+                      
+                    </SchemaItem><SchemaItem
+                      collapsible={false}
+                      name={"contact_number"}
+                      required={false}
+                      schemaName={"string"}
+                      qualifierMessage={undefined}
+                      schema={{"type":"string","default":"7898786755","description":"The actual phone number of the user. eg: **7898786755**"}}
+                    >
+                      
+                    </SchemaItem><SchemaItem
+                      collapsible={false}
+                      name={"role_name"}
+                      required={false}
+                      schemaName={"string"}
+                      qualifierMessage={undefined}
+                      schema={{"type":"string","default":"1-Global Admin","description":"The role assigned to the user within the system. eg: **1-Global Admin**"}}
+                    >
+                      
+                    </SchemaItem><SchemaItem
+                      collapsible={false}
+                      name={"program_group"}
+                      required={false}
+                      schemaName={"string"}
+                      qualifierMessage={undefined}
+                      schema={{"type":"string","default":"5-All Programs","description":"Represents the group or program the user is associated with.  eg: **5-All Programs**"}}
+                    >
+                      
+                    </SchemaItem><SchemaItem
+                      collapsible={false}
+                      name={"report_group"}
+                      required={false}
+                      schemaName={"string"}
+                      qualifierMessage={undefined}
+                      schema={{"type":"string","default":"9-All Reports","description":"Indicates the group and category of reports the user has access to. eg: **9-All Reports**"}}
+                    >
+                      
+                    </SchemaItem><SchemaItem
+                      collapsible={false}
+                      name={"password"}
+                      required={false}
+                      schemaName={"string"}
+                      qualifierMessage={undefined}
+                      schema={{"type":"string","default":"Abc@12345678","description":"The password for the user. This should be securely handled and meet security requirements. eg: **Abc@12345678**"}}
+                    >
+                      
+                    </SchemaItem><li>
+                      <div
+                        style={{"fontSize":"var(--ifm-code-font-size)","opacity":"0.6","marginLeft":"-.5rem"}}
+                      >
+                        ]
+                      </div>
+                    </li>
+                  </div>
+                </details>
+              </SchemaItem>
+            </div>
+          </details>
+        </SchemaItem><SchemaItem
+          collapsible={false}
+          name={"fileName"}
+          required={false}
+          schemaName={"string"}
+          qualifierMessage={undefined}
+          schema={{"type":"string","default":"20220516180551_20220516060026_user_data.xlsx","description":"The name of the file that contains the user data."}}
+        >
+          
+        </SchemaItem>
+      </ul>
+    </details>
+  </TabItem>
+</MimeTabs><div>
+  <div>
+    <ApiTabs
+      label={undefined}
+      id={undefined}
+    >
+      <TabItem
+        label={"200"}
+        value={"200"}
+      >
+        <div>
+          
+          
+          Success.
+          
+          
+        </div><div>
+          
+        </div>
+      </TabItem><TabItem
+        label={"201"}
+        value={"201"}
+      >
+        <div>
+          
+          
+          Invalid access token.
+          
+          
+        </div><div>
+          
+        </div>
+      </TabItem><TabItem
+        label={"405"}
+        value={"405"}
+      >
+        <div>
+          
+          
+          first_name is required.
+          
+          
+        </div><div>
+          
+        </div>
+      </TabItem>
+    </ApiTabs>
+  </div>
+</div>
+      

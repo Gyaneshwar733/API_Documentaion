@@ -1,0 +1,243 @@
+---
+id: update-user-role
+title: "Update user role"
+description: "The API updates the role assigned to a user. It allows you to set and change the user roles and specify additional role related configrations such as escalated alerts and cases."
+sidebar_label: "Update user role"
+hide_title: true
+hide_table_of_contents: true
+api: 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
+sidebar_class_name: "post api-method"
+info_path: docs/seerportal-api
+custom_edit_url: null
+---
+
+import ApiTabs from "@theme/ApiTabs";
+import DiscriminatorTabs from "@theme/DiscriminatorTabs";
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import SecuritySchemes from "@theme/ApiExplorer/SecuritySchemes";
+import MimeTabs from "@theme/MimeTabs";
+import ParamsItem from "@theme/ParamsItem";
+import ResponseSamples from "@theme/ResponseSamples";
+import SchemaItem from "@theme/SchemaItem";
+import SchemaTabs from "@theme/SchemaTabs";
+import Heading from "@theme/Heading";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Update user role"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"post"}
+  path={"/userDetails/updateUsersRole"}
+>
+  
+</MethodEndpoint>
+
+
+
+The API updates the role assigned to a user. It allows you to set and change the user roles and specify additional role related configrations such as escalated alerts and cases.
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<MimeTabs
+  className={"openapi-tabs__mime"}
+>
+  <TabItem
+    label={"application/json"}
+    value={"application/json-schema"}
+  >
+    <details
+      style={{}}
+      className={"openapi-markdown__details mime"}
+      data-collapsed={false}
+      open={true}
+    >
+      <summary
+        style={{}}
+        className={"openapi-markdown__details-summary-mime"}
+      >
+        <h3
+          className={"openapi-markdown__details-summary-header-body"}
+        >
+          Body
+        </h3><strong
+          className={"openapi-schema__required"}
+        >
+          required
+        </strong>
+      </summary><div
+        style={{"textAlign":"left","marginLeft":"1rem"}}
+      >
+        <div
+          style={{"marginTop":"1rem","marginBottom":"1rem"}}
+        >
+          
+          
+          null
+          
+          
+        </div>
+      </div><ul
+        style={{"marginLeft":"1rem"}}
+      >
+        <SchemaItem
+          collapsible={true}
+          className={"schemaItem"}
+        >
+          <details
+            style={{}}
+            className={"openapi-markdown__details"}
+          >
+            <summary
+              style={{}}
+            >
+              <span
+                className={"openapi-schema__container"}
+              >
+                <strong
+                  className={"openapi-schema__property"}
+                >
+                  roleData
+                </strong><span
+                  className={"openapi-schema__name"}
+                >
+                   object[]
+                </span>
+              </span>
+            </summary><div
+              style={{"marginLeft":"1rem"}}
+            >
+              <div
+                style={{"marginTop":".5rem","marginBottom":".5rem"}}
+              >
+                
+                
+                Array of role mapping for the user. Each object contains role_id and user_id.
+                
+                
+              </div><li>
+                <div
+                  style={{"fontSize":"var(--ifm-code-font-size)","opacity":"0.6","marginLeft":"-.5rem","paddingBottom":".5rem"}}
+                >
+                  Array [
+                </div>
+              </li><SchemaItem
+                collapsible={false}
+                name={"roleId"}
+                required={false}
+                schemaName={"int64"}
+                qualifierMessage={undefined}
+                schema={{"type":"integer","format":"int64","default":3735,"description":"The ID of role to be assigned. e.g: **3735**"}}
+              >
+                
+              </SchemaItem><SchemaItem
+                collapsible={false}
+                name={"userId"}
+                required={false}
+                schemaName={"int64"}
+                qualifierMessage={undefined}
+                schema={{"type":"integer","format":"int64","default":12303,"description":"The ID of user who will be assigned the role. e.g: **12303**"}}
+              >
+                
+              </SchemaItem><li>
+                <div
+                  style={{"fontSize":"var(--ifm-code-font-size)","opacity":"0.6","marginLeft":"-.5rem"}}
+                >
+                  ]
+                </div>
+              </li>
+            </div>
+          </details>
+        </SchemaItem><SchemaItem
+          collapsible={false}
+          name={"escalate_alerts_role_id"}
+          required={false}
+          schemaName={"int64"}
+          qualifierMessage={undefined}
+          schema={{"type":"integer","format":"int64","default":2979,"description":"The role ID for escalated alerts. e.g: **2979**."}}
+        >
+          
+        </SchemaItem><SchemaItem
+          collapsible={false}
+          name={"escalate_cases_role_id"}
+          required={false}
+          schemaName={"int64"}
+          qualifierMessage={undefined}
+          schema={{"type":"integer","format":"int64","default":2979,"description":"The role ID for escalated cases. e.g: **2979**."}}
+        >
+          
+        </SchemaItem><SchemaItem
+          collapsible={false}
+          name={"deleted_role_id"}
+          required={false}
+          schemaName={"string"}
+          qualifierMessage={undefined}
+          schema={{"type":"string","default":"3300.","description":"The role ID that is to be removed or marked as as deleted. e.g: **3300**."}}
+        >
+          
+        </SchemaItem>
+      </ul>
+    </details>
+  </TabItem>
+</MimeTabs><div>
+  <div>
+    <ApiTabs
+      label={undefined}
+      id={undefined}
+    >
+      <TabItem
+        label={"200"}
+        value={"200"}
+      >
+        <div>
+          
+          
+          Success.
+          
+          
+        </div><div>
+          
+        </div>
+      </TabItem><TabItem
+        label={"201"}
+        value={"201"}
+      >
+        <div>
+          
+          
+          Invalid access token.
+          
+          
+        </div><div>
+          
+        </div>
+      </TabItem><TabItem
+        label={"405"}
+        value={"405"}
+      >
+        <div>
+          
+          
+          escalate_alerts_role_id is required,  
+          deleted_role_id must be a number
+          
+          
+        </div><div>
+          
+        </div>
+      </TabItem>
+    </ApiTabs>
+  </div>
+</div>
+      
