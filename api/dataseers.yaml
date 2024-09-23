@@ -165,7 +165,7 @@ paths:
       tags:
       - User Details
       summary: TOTP validation
-      description: The API validates a Time-Based One-Time Password (TOTP) for two-factor authentication (2FA). After validation, it provides an authentication token, enables the user to access protected resources.
+      description: The API verifies a Time-Based One-Time Password (TOTP) for two-factor authentication (2FA). Once verified, it issues an authentication token, allowing the user to access protected resources.
       consumes:
       - application/json
       produces:
