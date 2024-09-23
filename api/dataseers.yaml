@@ -50,7 +50,7 @@ paths:
       tags:
       - User Details
       summary: Login
-      description: The API verifies the user's email and password to confirm their identity.
+      description: The API allows user to login to their account by submitting their email and password.
       operationId: login
       consumes:
       - application/json
@@ -59,7 +59,6 @@ paths:
       parameters:
       - in: body
         name: body
-        description: 'Add credentials '
         required: true
         schema:
           $ref: '#/definitions/Login'
@@ -71,7 +70,8 @@ paths:
         "415":
           description: You have entered an invalid username or password.
         "405":
-          description: "Required parameters are missing, Please enter a valid email."
+          description: "Required parameters are missing, 
+          \nPlease enter a valid email."
         "463":
           description: Your password has been expired. You have to reset your password to login.
   /userDetails/check-email:
@@ -142,7 +142,7 @@ paths:
       tags:
       - User Details
       summary: TOTP secret generation
-      description: The API generates a Time-Based One-Time Password (TOTP) secret for two-factor authentication (2FA). The secret is used to create TOTP codes that enhance the security of user accounts.
+      description: The API generates a time-based one-time password (TOTP) secret for two-factor authentication (2FA), which is used to create temporary codes to make user accounts more secure.
       consumes:
       - application/json
       produces:
@@ -150,7 +150,6 @@ paths:
       parameters:
       - in: body
         name: body
-        description: "null"
         required: true
         schema:
           $ref: '#/definitions/TotpSecret'
@@ -215,7 +214,8 @@ paths:
         "201":
           description: Invalid access token.
         "405":
-          description: "user_id is required, user_i is not allowed."
+          description: "user_id is required, 
+          \nuser_i is not allowed."
         "500":
           description: Something went wrong please contact the system administrator.
   /userDetails/updateProfile:
@@ -279,7 +279,8 @@ paths:
         "404":
           description: "User have still need to complete 2FA setting. Current status is pending, User[s] not found."
         "405":
-          description: "id is required, id must be a number."
+          description: "id is required, 
+          \nid must be a number."
         "500":
           description: Something went wrong please contact the system administrator.
   /userDetails/bulk-upload:
@@ -17938,7 +17939,7 @@ definitions:
         description: 'Additional information or metadata about the request or user.'
       hash:
         type: string
-        description: 'Additional information or metadata about the request or user.'
+        description: "The hash of the user's credentials or password for secure transmission."
   CheckEmail:
     type: object
     properties:
@@ -17947,7 +17948,7 @@ definitions:
         description: 'The email address of the user. It should be a valid email format.'
       requestType:
         type: string
-        description: 'The request is for the password rest.'
+        description: 'The request is for the password reset.'
   Register:
     type: object
     properties:
@@ -17975,7 +17976,7 @@ definitions:
         description: 'The user''s email address used for account registration.'
       password:
         type: string
-        description: 'The user''s chosen password for account access. This should be a secure, encrypted string.'
+        description: 'The user''s chosen password for account access. This should be a secure.'
       confirm_password:
         type: string
         description: 'A confirmation of the user''s password to ensure both entries match.'
